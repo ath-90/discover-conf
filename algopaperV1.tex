@@ -15,7 +15,7 @@
 
 \renewcommand\IEEEkeywordsname{Keywords:}
 
-\title{Comparative Study of Heuristic TSP Algorithms With Google Maps API}
+\title{A Framework To Study Heuristic TSP Algorithms With Google Maps API}
 
 \author{
 \IEEEauthorblockN{Ajumal P A, Ananthakrishnan S, Anubhav Jain, Athreya H N, K Chandrasekaran}
@@ -27,7 +27,7 @@ Mangalore, India \\
 \maketitle
 
 \begin{abstract}
-Millions of people depend on the navigation facilities available in smartphones and web browsers for their daily commutes, planning long trips ahead of time, looking up places etc. Integration of GPS and compass made navigating anywhere in the world a trivial task. Today, there are several applications available that fit the purpose of navigation such as Waze, HereWeGo (previously known as Here Maps by Nokia), Google Maps, etc. We used Google Maps to embark on a tour that will take us to chosen places by covering the least distance possible. We found that none of the aforementioned applications provide such a facility. In this paper, we create a web application using Google Maps APIs to create such a facility. We mapped this problem to the Traveling salesman problem and tried to solve it using algorithms known for approximating TSP such as Artificial Bee Colony Algorithm, Particle Swarm Optimization and Two-opt Algorithm. We ran the web application using these algorithms and found that, Particle Swarm Optimization gives the best possible route.
+Millions of people depend on the navigation facilities available in smartphones and web browsers for their daily commutes, planning long trips ahead of time, looking up places etc. Integration of GPS and compass made navigating anywhere in the world a trivial task. Today, there are several applications available that fit the purpose of navigation such as Waze, HereWeGo (previously known as Here Maps by Nokia), Google Maps, etc. When Google Maps was used to embark on a tour that will take us to chosen places by covering the least distance possible, it is observed that none of the aforementioned applications provide such a feature. In this paper, a framework is developed with Google Maps APIs to create such a feature. This problem is mapped to the Traveling salesman problem and tried to solve it using algorithms known for approximating TSP such as Artificial Bee Colony Algorithm, Particle Swarm Optimization and Two-opt Algorithm. The framework is tested with these algorithms and found that, Particle Swarm Optimization gives the best possible route.
 
 \end{abstract}
 
@@ -36,46 +36,44 @@ Navigation, Google Maps, Tour, Traveling salesman problem, Artificial Bee Colony
 \end{IEEEkeywords}
 
 \section{Introduction}
-Google Maps is a popular application which lets a user navigate around places. In addition to the Android application, it is available as a web application  The main features of the application are turn-by-turn navigation (not available in the web application), showing nearby attractions, different views including satellite and terrain views, showing real-time traffic conditions, remembering where the user parked their vehicle. Google Maps for India has a two-wheeler mode that calculates the travel time in a different way. 
+Google Maps is a popular application which lets a user navigate around places. In addition to the Android application, it is available as a web application. Google Maps for India has a two-wheeler mode that calculates the travel time in a different way. 
 
-Google maps gives a very efficient way of routing the vehicle in real time with respect to distance as well as time. Usually, it collects the traffic data in real time and find routes with lesser traffic. It also gives real-time traffic data on the map which is very useful for the user to understand which road must be very much congested(They use colors to show the traffic volume, red being the very congested road).
+Google maps gives a very efficient way of routing the vehicle in real time with respect to distance as well as time. Usually, it collects the traffic data in real time and find routes with lesser traffic. It also gives real-time traffic data on the map which is very useful for the user to understand which route could be more congested(They use colors to show the traffic volume, red being the very congested route).
 Initially, all the maps available online had only option to mark one source and destination, Later it improved by giving multiple destinations with one source, which really improved the user experience. They also incorporated multiple public means of transport like bus including timing and names of the buses.
 
-With all these options, We feel we are lacking with planning capacity of the maps. If we know the exact place name or location we can point those and get the route from your current location and navigate in real-time. But we are ignorant of the sequence we have to travel in order to complete the tour in minimum  amount of time. Doing this manually using maps is a tedious task as the user may have to permute through all the possible ways of going by marking on the map and the distance. It is cumbersome if the number of cities user wants to travel is very large.
+With all these options, a lacking with planning capacity of the maps is felt. If the exact place name or location is known, user can point those and get the route from their current location and navigate in real-time. Yet the sequence of travel in order to complete the tour in minimum  amount of time is the information that is missing in this exercise. Doing this manually using maps is a tedious task as the user may have to permute through all the possible ways of going by marking on the map and the distance. It is cumbersome if the number of cities user wants to travel is very large.
 
-If we closely look at this problem every user wants to travel through a number of cities and come back to the same city. Intuitively it's like a circle because the user will always want to come back to the place where he actually started. If we map this problem to a graph with cities as nodes and path between them as edges, it can be formulated as a Hamiltonian cycle. In a Hamiltonian Cycle all the vertices in the graph must be visited without repetition. Mapping problems like this will give us an idea of how to solve them because of the very high number of research has been already in this area.
-
-Graph problems related to routing with a high number of cities has become high latency problem because it is a computationally intensive task. So the world moved to the concept of GPUs with a very high number of cores to solve this kind of problems very fast. GPUs like Nvidia developed with their own library called CUDA to get very high performance. So this kind of problems started using GPU which we call it as parallel processing and many algorithms which we use to solve graph problems already mapped to the parallel version of the same. Mapping them is a hectic task, but the realized performance gain will justify the one-time task of parallelization.
+A close look at this problem shows that every user wants to travel through a number of cities and come back to the same city. Intuitively, it's like a circle because the user will always want to come back to the place where he actually started. With a mapping of this problem to a graph with cities as nodes and path between them as edges, it can be formulated as a Hamiltonian cycle. In a Hamiltonian Cycle all the vertices in the graph must be visited without repetition. Mapping problems like this will give an idea of how to solve them because of the very high number of research has been already in this area.
 
 Finding a Hamiltonian path with a number of cities can be mapped to a very famous problem of Travelling Salesman Problem. A brief description of the same will be followed in this section. A tremendous amount of work has been done with regard to TSP. It has become a de-facto benchmark for any new algorithm in the literature. Since TSP is a very old problem, there are near-perfect solutions to specific TSP problems with constraints, although the general TSP still remains unsolved. A popular program that was introduced in 1997 is the Concorde. It is developed by the University of Waterloo in ANSI C. Concorde is regarded as one of the best TSP solvers till date for symmetric TSP. Concorde is compared with other tools of its time here[1].
 
 \subsection {Problem Statement}
 
-Our requirement is to choose multiple locations in the map and get a tour of those places covering the minimum possible distance or taking the least amount of time. Also, the tour should get us back to the starting point. To meet these requirements, we tested out various map applications such as HereWeGo, Waze Maps and Google Maps. Among the applications we tested, only Google Maps provided at least a feature to choose a maximum of 10 locations. The rest allows a user to choose only source and destination. Even then, the problem is Google Maps will give you a route according to the order you chose the locations. This route is not based on efficiency as opposed to our requirement. In this scenario, even if an efficient tour was available, this information would be, unfortunately, hidden from a Google Maps user. 
+The requirement is to choose multiple locations in the map and get a tour of those places covering the minimum possible distance or taking the least amount of time. Also, the tour should get us back to the starting point. To meet these requirements, testing of various map applications such as HereWeGo, Waze Maps and Google Maps was done. Among the applications that were tested, only Google Maps provided at least a feature to choose a maximum of 10 locations. The rest allows a user to choose only source and destination. Even then, the problem is Google Maps will give you a route according to the order you chose the locations. This route is not based on efficiency as opposed to the requirement. In this scenario, even if an efficient tour was available, this information would be, unfortunately, hidden from a Google Maps user. 
 
-In this paper, we propose a solution to this issue in the form of a web application. We observed that the Traveling Salesman Problem is based on the same grounds as our issue and we can map our issue as an instance of the Traveling Salesman Problem. Now, the solution to our problem can be obtained by solving the Traveling Salesman Problem. We explored three popular algorithms which are known for solving the Traveling Salesman Problem. We did a comparison study to find out which algorithm best suits our need in terms of providing the best tour.
+In this paper, a solution is proposed to this issue in the form of a web application. The Traveling Salesman Problem is based on the same grounds as this issue and a mapping can be done with this issue as an instance of the Traveling Salesman Problem. Now, the solution to this problem can be obtained by solving the Traveling Salesman Problem. Three popular algorithms are explored which are known for solving the Traveling Salesman Problem. A comparison study is done to find out which algorithm best suits the need in terms of providing the best tour.
 
 
 \subsection {Travelling Salesman Problem}
 
-Travelling Salesman problem is a very popular NP-Hard optimization problem. Traveling Salesman Problem can be stated as follows: Given N number of cities, a salesman needs to travel to all cities. In doing so, the salesman must be careful about two constraints. Firstly, he must visit a city exactly once and the other constraint is he must traverse through the N number of cities and return to his starting point by traveling the minimum distance possible. The solution to this problem is a list of cities in the order which allows for minimum distance traversal. We use three algorithms to solve this problem so as to find a solution to our original problem. The algorithms are Artificial Bee Colony Algorithm, Particle Swarm Optimization, and Parallel Two-opt Algorithm. A brief description of these algorithms can be found below.
+Travelling Salesman problem is a very popular NP-Hard optimization problem. Traveling Salesman Problem can be stated as follows: Given N number of cities, a salesman needs to travel to all cities. In doing so, the salesman must be careful about two constraints. Firstly, he must visit a city exactly once and the other constraint is he must traverse through the N number of cities and return to his starting point by traveling the minimum distance possible. The solution to this problem is a list of cities in the order which allows for minimum distance traversal. Three algorithms are used to solve this problem so as to find a solution to the original problem. The algorithms are Artificial Bee Colony Algorithm, Particle Swarm Optimization, and Parallel Two-opt Algorithm. A brief description of these algorithms can be found below.
 
 
-The rest of the paper is organized as follows: We begin by explaining the algorithms we use to solve TSP in section 2. A description of how the web application is implemented can be found on section 3. Then in the same section, we proceed to make comparisons of the performance of the said algorithms on the grounds of execution time and generation of the best route ( Best route, in this case, is the route with the minimum distance or shortest time). Lastly, we wind up the paper with a conclusion.
+The rest of the paper is organized as follows: In section 2, an explanation of algorithms used to solve TSP is done. A description of how the web application is implemented can be found in section 3. Then in the same section, comparisons of the performance of the said algorithms are made on the grounds of execution time and generation of the best route (Best route, in this case, is the route with the minimum distance or shortest time). Lastly, the paper ends with a conclusion.
 
 \section {Related Works}
 Some of the recent related work with regards to maps are cab-hailing apps. These apps use algorithms which exist to give the user the shortest-possible commute with reference to time and distance. Much of the other products based on maps focus on point-to-point routes based on the locations given by the user, in that order. Apps like Waze, provide real-time traffic information and road information so that the user gets the best information possible at the right time.
 
-Vehicle routing problem is another specific version of our problem, which deals with customer pickup and delivery.Many algorithms have been developed to solve this problem[2][3][4].Researchers leveraged the problem of vehicle tracking and routing, guiding them in the right direction between two cities[5][6]. Another critical and important application is that the self-driving cars which are using maps to route themselves. This is such an important application that it is very difficult to imagine self-driving cars without maps data.
+Vehicle routing problem is another specific version of the problem, which deals with customer pickup and delivery.Many algorithms have been developed to solve this problem[2][3][4].Researchers leveraged the problem of vehicle tracking and routing, guiding them in the right direction between two cities[5][6]. Another critical and important application is that the self-driving cars which are using maps to route themselves. This is such an important application that it is very difficult to imagine self-driving cars without maps data.
 
-Tracking for safety purpose is another map related application which uses GPS to track the entire fleet of taxi service. This will allow the company/user to track its vehicles as well as improve the safety of passengers. There are two types of tracking: passive and active. When the GPS data is collected in a device but it is not transmitted, we call it passive tracking. Collected data is retrieved only when the vehicle returns to the company. This cannot ensure the safety of customers. In the case of active tracking, the data collected by various sensors are transmitted in near real-time. This ensures that the activities are supervised and safety of passengers is ensured.  
+Tracking for safety purpose is another map related application which uses GPS to track the entire fleet of taxi service. This will allow the company/user to track its vehicles as well as improve the safety of passengers. There are two types of tracking: passive and active. When the GPS data is collected in a device but it is not transmitted, it is called passive tracking. Collected data is retrieved only when the vehicle returns to the company. This cannot ensure the safety of customers. In the case of active tracking, the data collected by various sensors are transmitted in near real-time. This ensures that the activities are supervised and safety of passengers is ensured.  
 
-In the case of TSP, a large number of approximate algorithms have been developed.There are a number of real world problems which we can generalise to TSP[7]. A broad area of research for TSP approximation is genetic algorithms. There are specific techniques to find the subsequent generations in GA and all of them are compared here[8]. Nature-inspired algorithms for solving TSP include Artificial Bee Colony Optimization[9], Ant Colony Optimization[10], Particle Swarm Optimization[11][12]. A hybrid method to solve TSP[13] is also in the literature which considers different algorithms for different situations. Since TSP can be broken down into sub-problems for some specific cases, these cases can be highly optimized with parallel coding architecture. Much work has been done with regards to solving TSP with parallel programs[14],[15]. All the above meta-heuristic algorithms have been adopted to take advantage of parallelization. A number of greedy algorithms are also developed as an approximation strategy to conquer TSP, like lin-kernighen, greedy 2-opt, 2-mst, etc. 
+In the case of TSP, a large number of approximate algorithms have been developed.There are a number of real world problems which can  be generalised to TSP[7]. A broad area of research for TSP approximation is genetic algorithms. There are specific techniques to find the subsequent generations in GA and all of them are compared here[8]. Nature-inspired algorithms for solving TSP include Artificial Bee Colony Optimization[9], Ant Colony Optimization[10], Particle Swarm Optimization[11][12]. A hybrid method to solve TSP[13] is also in the literature which considers different algorithms for different situations. Since TSP can be broken down into sub-problems for some specific cases, these cases can be highly optimized with parallel coding architecture. Much work has been done with regards to solving TSP with parallel programs[14],[15]. All the above meta-heuristic algorithms have been adopted to take advantage of parallelization. A number of greedy algorithms are also developed as an approximation strategy to conquer TSP, like lin-kernighen, greedy 2-opt, 2-mst, etc. 
 
 
 \section{Algorithms}
 \subsection {Artificial Bee Colony with SPV rule (ABC)}
-This section gives an idea of how ABC is specifically working for TSP. Swarm-based metaheuristic algorithm ABC is designed based on the behavior of honey bees. A Bee Colony has three kinds of bees: Employed bees, Onlooker bees, and Scout bees. Each of these bees serves a specific purpose. The number of solutions we make for the initial permutation of the cities is called population size. The solutions are randomly initialized. The dimension of each solution will be of the number of cities. The fitness function will give you the cost of the solution which you pass from the population. 
+This section gives an idea of how ABC is specifically working for TSP. Swarm-based metaheuristic algorithm ABC is designed based on the behavior of honey bees. A Bee Colony has three kinds of bees: Employed bees, Onlooker bees, and Scout bees. Each of these bees serves a specific purpose. The number of solutions made for the initial permutation of the cities is called population size. The solutions are randomly initialized. The dimension of each solution will be of the number of cities. The fitness function will give you the cost of the solution which you pass from the population. 
 
 ABC algorithm by itself cannot be used for solving the Traveling Salesman Problem. This is because ABC uses real number generation to obtain new solutions but Traveling Salesman Problem requires discrete values. This can be solved by applying SPV rule.More details on SPV rule can be found here [16]. SPV rule will convert the random real numbers generated into discrete values in their increasing order. For eg. Consider an instance of TSP with 5 cities. Suppose ABC has generated  a solution [0.5, 2.5, 1.2, 4.5, 4.0]. SPV rule will convert this solution into [0, 2, 1, 4, 3].  The algorithm is as follows:
 
@@ -135,7 +133,7 @@ ABC algorithm by itself cannot be used for solving the Traveling Salesman Proble
   \begin{center}
     
     \begin{tabular}{l|c|r}
-      \textbf{Number of Cites} & \textbf{Running Time (ms)} & \textbf{Path Cost (km)}\\
+      \textbf{Number of Cities} & \textbf{Running Time (ms)} & \textbf{Path Cost (km)}\\
       \hline
       5 & 19 & 538\\
       10 & 36& ,4321\\
@@ -178,7 +176,7 @@ In PSO, each candidate solution is called a particle and candidate solution is i
   \begin{center}
     \label{tab:table2}
     \begin{tabular}{l|c|r}
-      \textbf{Number of Cites} & \textbf{Running Time (ms)} & \textbf{Path Cost (km)}\\
+      \textbf{Number of Cities} & \textbf{Running Time (ms)} & \textbf{Path Cost (km)}\\
       \hline
       5 & 32 & 538\\
       10 & 39 & 3990\\
@@ -239,7 +237,7 @@ In PSO, each candidate solution is called a particle and candidate solution is i
   \begin{center}
     \label{tab:table3}
     \begin{tabular}{l|c|r}
-      \textbf{Number of Cites} & \textbf{Running Time (ms)} & \textbf{Path Cost (km)}\\
+      \textbf{Number of Cities} & \textbf{Running Time (ms)} & \textbf{Path Cost (km)}\\
       \hline
       5 & 574 & 545\\
       10 & 580 & 5310\\
@@ -256,9 +254,9 @@ In PSO, each candidate solution is called a particle and candidate solution is i
 
 Here, a parallel implementation of the 2-opt algorithm is used. CUDA is a framework developed by NVIDIA for their graphics cards. CUDA lets you write serial “kernels” which are parallelized by the compiler with GCC at its backend. NVCC is the compiler which converts the program into parallel code. When the program is run, it is first copied into the GPU memory and then executed. This causes an overhead for any program that is executed on the GPU. 
 
- The algorithm here utilizes the parallel processing capabilities of Tesla K40 GPU and is able to outperform the other algorithms when the number of cities is very large.If we consider for smaller values of n(number of cities) for TSP, the program is actually slower than the serial code, but as the n value increases, the overhead becomes less significant and reaches to a point where the parallel code is orders of magnitude higher than serial code. The architecture of the code is in such a way that the cost-matrix is copied onto the device from CPU and the code which identifies the 2-opt routes and corrects them in the graph is run simultaneously on hundreds of streaming multiprocessors[18]. 
+ The algorithm here utilizes the parallel processing capabilities of Tesla K40 GPU and is able to outperform the other algorithms when the number of cities is very large.If smaller values of n(number of cities) are considered for TSP, the program is actually slower than the serial code, but as the n value increases, the overhead becomes less significant and reaches to a point where the parallel code is orders of magnitude higher than serial code. The architecture of the code is in such a way that the cost-matrix is copied onto the device from CPU and the code which identifies the 2-opt routes and corrects them in the graph is run simultaneously on hundreds of streaming multiprocessors[18]. 
 
- Considering the use case scenarios of our web application intended to work, this algorithm is unable to leverage it’s parallel processing capabilities because the algorithm takes significant overhead to load the program into GPU memory, hence for a fewer number of cities it is not suitable.
+ Considering the use case scenarios of the web application intended to work, this algorithm is unable to leverage it’s parallel processing capabilities because the algorithm takes significant overhead to load the program into GPU memory, hence for a fewer number of cities it is not suitable.
 
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=\columnwidth]{pathcost.png}}
@@ -275,7 +273,7 @@ Here, a parallel implementation of the 2-opt algorithm is used. CUDA is a framew
 
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=\columnwidth]{tspResultApp.png}}
-\caption{Tour planned by Our Application(cost=37KM).}
+\caption{Tour planned by The Application(cost=37KM).}
 \label{fig3}
 \end{figure}
 
@@ -290,7 +288,7 @@ Here, a parallel implementation of the 2-opt algorithm is used. CUDA is a framew
   \begin{center}
     \label{tab:table4}
     \begin{tabular}{l|c|r}
-      \textbf{Number of Cites} & \textbf{Path Cost (km)}\\
+      \textbf{Number of Cities} & \textbf{Path Cost (km)}\\
       \hline
       5 & 693\\
       10 & 5771\\
@@ -305,24 +303,27 @@ Here, a parallel implementation of the 2-opt algorithm is used. CUDA is a framew
 
 
 \section {Implementation}
-For implementation purpose, we have used Google maps API. For rendering and locating a node (marker), we used ‘map’ and ‘geocoder’ service provided by Google. Google Maps API also gives the information about the latitude, longitude and place address. For fetching the road distance between all the pairs of the cities we have used distance matrix service provided by Google. It takes latitude and longitude as input and returns road distance and time required to cover that distance.
+For implementation purpose, Google maps API is used. For rendering and locating a node (marker), ‘map’ and ‘geocoder’ service provided by Google are used. Google Maps API also gives the information about the latitude, longitude and place address. For fetching the road distance between all the pairs of the cities, distance matrix service provided by Google is used. It takes latitude and longitude as input and returns road distance and time required to cover that distance.
 
-We create input data (complete graph) which contains distance information of every pair of nodes. After this, we call backend using web service and give this complete graph for further processing.
+Input data (complete graph) is created which contains distance information of every pair of nodes. After this, backend is called using web service and give this complete graph for further processing.
 
-We are using a web server to receive the input from frontend, This complete graph is then converted into an adjacency matrix. Our algorithms (PSO or ABC or PTO) is executed in the backend which takes this adjacency matrix as input and gives us minimum cost route. The output will be sent to the frontend.
+A web server is used to receive the input from frontend, This complete graph is then converted into an adjacency matrix. The algorithms (PSO or ABC or PTO) is executed in the backend which takes this adjacency matrix as input and gives us minimum cost route. The output will be sent to the frontend.
 
-We have used Directions API of Google to render the output on the map, which renders the “driving” mode route between the cities.
+Directions API of Google is used to render the output on the map, which renders the “driving” mode route between the cities.
 
-All executions were repeated 10 times using major cities within India. We have selected cities in the range starting from 5 and a maximum of 30 cities. As we ran the tests, two metrics were measured: (i) running time and (ii) the cost of the tour generated by each algorithm. Our results are shown in Fig1 and Fig2. It is evident from the results that all the algorithms we employed give a far better solution than that of Google Maps. We found out that PSO is giving the best cost solution among all the algorithms after 10 cities.
+All executions were repeated 10 times using major cities within India. Cities are selected in the range starting from 5 and a maximum of 30 cities. As the tests were run, two metrics were measured: (i) running time and (ii) the cost of the tour generated by each algorithm. The results are shown in Fig1 and Fig2. It is evident from the results that all the algorithms that were employed give a far better solution than that of Google Maps. It is also found that PSO is giving the best cost solution among all the algorithms after 10 cities.
 
 The web application provides the user the ability to calculate the route based on distance or time. Two buttons are provided in the interface to serve this purpose. After marking all the desired locations, the user can click on either of the two buttons and the route with the desired property will be shown on the map. It is not the case that the route with minimum distance and the route with minimum time will be the same. There are cases in which the two routes are different. An example that illustrates this difference is shown on Figure 5 and Figure 6.
 
 \section {Results}
 
-Figure 1 shows the path cost comparison of algorithms we implemented. The data was collected for routes with minimum distance. We started the tests with 5 cities and gradually went up to 30 cities. PSO algorithm gives the best performance when only 10 cities are selected. The Artificial Bee Colony algorithm gives almost the same performance as PSO.  This trend is continued throughout the test. Meanwhile, Google’s algorithm gives the worst performance overall. It performs slightly worse than PTO when tested on 10 cities. At 15 cities, Google’s algorithm better performed than PTO. As the number of cities was increased further, the performance of Google’s algorithm kept on getting worse. This can be seen from the graph as for 30 cities, the cost of the route provided by Google’s algorithm is 21,333 km and PTO was able to give a cost of 19,169km. In each case, the PSO algorithm was able to perform consistently and gives the best cost among all the algorithms. The performance analysis of routes with minimum time is the same. This is because the algorithms cannot identify whether the input data given to it is time or distance based.
+Figure 1 shows the path cost comparison of algorithms that were implemented. The data was collected for routes with minimum distance. The tests were started with 5 cities and gradually went up to 30 cities. PSO algorithm gives the best performance when only 10 cities are selected. The Artificial Bee Colony algorithm gives almost the same performance as PSO.  This trend is continued throughout the test. Meanwhile, Google’s algorithm gives the worst performance overall. It performs slightly worse than PTO when tested on 10 cities. At 15 cities, Google’s algorithm better performed than PTO. As the number of cities was increased further, the performance of Google’s algorithm kept on getting worse. This can be seen from the graph as for 30 cities, the cost of the route provided by Google’s algorithm is 21,333 km and PTO was able to give a cost of 19,169km. In each case, the PSO algorithm was able to perform consistently and gives the best cost among all the algorithms. The performance analysis of routes with minimum time is the same. This is because the algorithms cannot identify whether the input data given to it is time or distance based.
 
-Figure 2 shows the running time comparison of the algorithms. Here, we can see that the PSO algorithm gives almost consistent running time for the number of cities we tested. In the case of ABC, the increase in number of cities from 15 took a toll on the running time. The PTO algorithm gave the worst running time of all averaging at 570 ms. 
+Figure 2 shows the running time comparison of the algorithms. Here, it can be see that the PSO algorithm gives almost consistent running time for the number of cities that were tested. In the case of ABC, the increase in number of cities from 15 took a toll on the running time. The PTO algorithm gave the worst running time of all averaging at 570 ms. 
 
+Figures 3 and 4 compare the results shown by the web application with the results of Google Maps. 
+
+Figures 5 and 6 show that the web application can be configured to provide optimal results either by distance or by time. Figure 5 shows the configuration where the most optimal route follows the minimal distance than other routes, whereas most optimal route in Figure 6 follows minimum time taken among all routes.
 
 
 \begin{figure}[htbp]
@@ -338,7 +339,7 @@ Figure 2 shows the running time comparison of the algorithms. Here, we can see t
 \end{figure}
 
 \section {Conclusion \& Future Work}
-We created a web application that provides an interface to select multiple locations, Our application will give an optimal route back to the user. Depending on the choice, this route will be optimized either for minimum distance or minimum time. After comparing the three algorithms, we came to this conclusion: (i) If the use case is limited to less than 10 cities, both ABC and PSO gives the same minimum cost, but PSO takes more time. So, we recommend ABC in this case. (ii) If the use case exceeds 10 cities, the running time as well as the quality of the route given by Particle Swarm Optimization is better than Artificial Bee Colony and 2-Opt. Hence, PSO is preferred in this case. In this paper, we compared three algorithms which are popular among the ones solving the Traveling Salesman Problem. As a continuation of this work, other algorithms can be explored.
+A web application was created that provides an interface to select multiple locations. The application will give an optimal route back to the user. Depending on the choice, this route will be optimized either for minimum distance or minimum time. After comparing the three algorithms, the conclusion was made that (i) If the use case is limited to less than 10 cities, both ABC and PSO gives the same minimum cost, but PSO takes more time. So, ABC is recommended in this case. (ii) If the use case exceeds 10 cities, the running time as well as the quality of the route given by Particle Swarm Optimization is better than Artificial Bee Colony and 2-opt. Hence, PSO is preferred in this case. In this paper, three algorithms are compared which are popular among the ones solving the Traveling Salesman Problem. As a continuation of this work, other algorithms can be explored and the framework can be improved to make it more generalised.
 
 
 \begin{thebibliography}{00}
