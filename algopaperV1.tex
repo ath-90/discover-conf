@@ -68,12 +68,12 @@ Vehicle routing problem is another specific version of the problem, which deals 
 
 Tracking for safety purpose is another map related application which uses GPS to track the entire fleet of taxi service. This will allow the company/user to track its vehicles as well as improve the safety of passengers. There are two types of tracking: passive and active. When the GPS data is collected in a device but it is not transmitted, it is called passive tracking. Collected data is retrieved only when the vehicle returns to the company. This cannot ensure the safety of customers. In the case of active tracking, the data collected by various sensors are transmitted in near real-time. This ensures that the activities are supervised and safety of passengers is ensured.  
 
-In the case of TSP, a large number of approximate algorithms have been developed.There are a number of real world problems which can  be generalised to TSP[7]. A broad area of research for TSP approximation is genetic algorithms. There are specific techniques to find the subsequent generations in GA and all of them are compared here[8]. Nature-inspired algorithms for solving TSP include Artificial Bee Colony Optimization[9], Ant Colony Optimization[10], Particle Swarm Optimization[11][12]. A hybrid method to solve TSP[13] is also in the literature which considers different algorithms for different situations. Since TSP can be broken down into sub-problems for some specific cases, these cases can be highly optimized with parallel coding architecture. Much work has been done with regards to solving TSP with parallel programs[14],[15]. All the above meta-heuristic algorithms have been adopted to take advantage of parallelization. A number of greedy algorithms are also developed as an approximation strategy to conquer TSP, like lin-kernighen, greedy 2-opt, 2-mst, etc. 
+In the case of TSP, a large number of approximate algorithms have been developed.There are a number of real world problems which can  be generalised to TSP[7]. A broad area of research for TSP approximation is genetic algorithms. There are specific techniques to find the subsequent generations in GA and all of them are compared here[8]. Nature-inspired algorithms for solving TSP include Artificial Bee Colony Optimization[9], Ant Colony Optimization[10], Particle Swarm Optimization[11][12]. A hybrid method to solve TSP[13] is also in the literature which considers different algorithms for different situations. Since TSP can be broken down into sub-problems for some specific cases, these cases can be highly optimized with parallel coding architecture. Much work has been done with regards to solving TSP with parallel programs[14],[15]. All the above meta-heuristic algorithms have been adopted to take advantage of parallelization. A number of greedy algorithms are also developed as an approximation strategy to conquer TSP, like lin-kernighen, greedy 2-Opt, 2-mst, etc. 
 
 
 \section{Algorithms}
 \subsection {Artificial Bee Colony with SPV rule (ABC)}
-This section gives an idea of how ABC is specifically working for TSP. Swarm-based metaheuristic algorithm ABC is designed based on the behavior of honey bees. A Bee Colony has three kinds of bees: Employed bees, Onlooker bees, and Scout bees. Each of these bees serves a specific purpose. The number of solutions made for the initial permutation of the cities is called population size. The solutions are randomly initialized. The dimension of each solution will be of the number of cities. The fitness function will give you the cost of the solution which you pass from the population. 
+Swarm-based metaheuristic algorithm ABC is designed based on the behavior of honey bees. A Bee Colony has three kinds of bees: Employed bees, Onlooker bees, and Scout bees. Each of these bees serves a specific purpose. The number of solutions made for the initial permutation of the cities is called population size. The solutions are randomly initialized. The dimension of each solution will be of the number of cities. The fitness function will give you the cost of the solution which you pass from the population. 
 
 ABC algorithm by itself cannot be used for solving the Traveling Salesman Problem. This is because ABC uses real number generation to obtain new solutions but Traveling Salesman Problem requires discrete values. This can be solved by applying SPV rule.More details on SPV rule can be found here [16]. SPV rule will convert the random real numbers generated into discrete values in their increasing order. For eg. Consider an instance of TSP with 5 cities. Suppose ABC has generated  a solution [0.5, 2.5, 1.2, 4.5, 4.0]. SPV rule will convert this solution into [0, 2, 1, 4, 3].  The algorithm is as follows:
 
@@ -130,8 +130,8 @@ ABC algorithm by itself cannot be used for solving the Traveling Salesman Proble
 
 
 \begin{table}[h!]
+ \label{tab:table1}\caption{Experimental results for ABC}
   \begin{center}
-    
     \begin{tabular}{l|c|r}
       \textbf{Number of Cities} & \textbf{Running Time (ms)} & \textbf{Path Cost (km)}\\
       \hline
@@ -142,8 +142,6 @@ ABC algorithm by itself cannot be used for solving the Traveling Salesman Proble
       25 & 133 & 15089\\
       30 & 173  & 18133\\
     \end{tabular}
-
-    \caption{Experimental results for ABC}
   \end{center}
 \end{table}
 
@@ -174,7 +172,7 @@ In PSO, each candidate solution is called a particle and candidate solution is i
 
 \begin{table}[h!]
   \begin{center}
-    \label{tab:table2}
+    \label{tab:table2} \caption{Experimental results for PSO}
     \begin{tabular}{l|c|r}
       \textbf{Number of Cities} & \textbf{Running Time (ms)} & \textbf{Path Cost (km)}\\
       \hline
@@ -185,7 +183,6 @@ In PSO, each candidate solution is called a particle and candidate solution is i
       25 & 73 & 14669\\
       30 & 82 & 17767\\
     \end{tabular}
-    \caption{Experimental results for PSO}
   \end{center}
 \end{table}
 
@@ -193,7 +190,7 @@ In PSO, each candidate solution is called a particle and candidate solution is i
 
 
 \subsection {Parallel Two-opt Algorithm (PTO)}
-2-opt is a local search algorithm for solving TSP. The main idea with 2-opt is that it takes 2 edges that are crossing over each other and straightens them out so that the distance travelled will be lesser.
+2-Opt is a local search algorithm for solving TSP. The main idea with 2-Opt is that it takes 2 edges that are crossing over each other and straightens them out so that the distance travelled will be lesser.
 
 
 
@@ -208,7 +205,7 @@ In PSO, each candidate solution is called a particle and candidate solution is i
 \begin{algorithm}[H]
 \caption{Algorithm for PTO}
 \begin{algorithmic}[1]
-\STATE 2opt (route, i, j)
+\STATE 2-Opt (route, i, j)
 \bindent
 \STATE copy route from 0 to i-1 to new-route
 \STATE copy route from i to j in reverse order to new route
@@ -219,7 +216,7 @@ In PSO, each candidate solution is called a particle and candidate solution is i
 \STATE cur-distance = calculateDistance(currentRoute)
 \FOR {i from 1 to number-of-nodes}
 \FOR {k from i+1 to number-of-nodes} 
-\STATE new-route = 2opt(existing-route, i, k)
+\STATE new-route = 2-Opt(existing-route, i, k)
 \STATE new-dist = calculateDistance(new-route)
 \IF {new-dist \textless cur-dist}
 \STATE existing-route = new-route
@@ -235,7 +232,7 @@ In PSO, each candidate solution is called a particle and candidate solution is i
 
 \begin{table}[h!]
   \begin{center}
-    \label{tab:table3}
+    \label{tab:table3} \caption{Experimental results for PTO}
     \begin{tabular}{l|c|r}
       \textbf{Number of Cities} & \textbf{Running Time (ms)} & \textbf{Path Cost (km)}\\
       \hline
@@ -246,17 +243,46 @@ In PSO, each candidate solution is called a particle and candidate solution is i
       25 & 587 & 16713\\
       30 & 583 & 19169\\
     \end{tabular}
-    \caption{Experimental results for PTO}
   \end{center}
 \end{table}
 
 
 
-Here, a parallel implementation of the 2-opt algorithm is used. CUDA is a framework developed by NVIDIA for their graphics cards. CUDA lets you write serial “kernels” which are parallelized by the compiler with GCC at its backend. NVCC is the compiler which converts the program into parallel code. When the program is run, it is first copied into the GPU memory and then executed. This causes an overhead for any program that is executed on the GPU. 
+Here, a parallel implementation of the 2-Opt algorithm is used. CUDA is a framework developed by NVIDIA for their graphics cards. CUDA lets you write serial “kernels” which are parallelized by the compiler with GCC at its backend. NVCC is the compiler which converts the program into parallel code. When the program is run, it is first copied into the GPU memory and then executed. This causes an overhead for any program that is executed on the GPU. 
 
- The algorithm here utilizes the parallel processing capabilities of Tesla K40 GPU and is able to outperform the other algorithms when the number of cities is very large.If smaller values of n(number of cities) are considered for TSP, the program is actually slower than the serial code, but as the n value increases, the overhead becomes less significant and reaches to a point where the parallel code is orders of magnitude higher than serial code. The architecture of the code is in such a way that the cost-matrix is copied onto the device from CPU and the code which identifies the 2-opt routes and corrects them in the graph is run simultaneously on hundreds of streaming multiprocessors[18]. 
+ The algorithm here utilizes the parallel processing capabilities of Tesla K40 GPU and is able to outperform the other algorithms when the number of cities is very large.If smaller values of n(number of cities) are considered for TSP, the program is actually slower than the serial code, but as the n value increases, the overhead becomes less significant and reaches to a point where the parallel code is orders of magnitude higher than serial code. The architecture of the code is in such a way that the cost-matrix is copied onto the device from CPU and the code which identifies the 2-Opt routes and corrects them in the graph is run simultaneously on hundreds of streaming multiprocessors[18]. 
 
  Considering the use case scenarios of the web application intended to work, this algorithm is unable to leverage it’s parallel processing capabilities because the algorithm takes significant overhead to load the program into GPU memory, hence for a fewer number of cities it is not suitable.
+
+\begin{table}[h!]
+  \begin{center}
+    \label{tab:table4} \caption{Experimental results for Google Maps Application}
+    \begin{tabular}{l|c|r}
+      \textbf{Number of Cities} & \textbf{Path Cost (km)}\\
+      \hline
+      5 & 693\\
+      10 & 5771\\
+      15 & 9163\\
+      20 & 13839\\ 
+      25 & 17689\\
+      30 & 21333\\
+    \end{tabular}
+    
+  \end{center}
+\end{table}
+
+
+\section {Implementation}
+
+For implementation purpose, Google maps API is used. For rendering and locating a node (marker), ‘map’ and ‘geocoder’ service provided by Google are used. Google Maps API also gives the information about the latitude, longitude and place address. For fetching the road distance between all the pairs of the cities, distance matrix service provided by Google is used. It takes latitude and longitude as input and returns road distance and time required to cover that distance.
+
+Input data (complete graph) is created which contains distance information of every pair of nodes. After this, backend is called using web service and give this complete graph for further processing.
+
+A web server is used to receive the input from frontend, This complete graph is then converted into an adjacency matrix. The algorithms (PSO or ABC or PTO) is executed in the backend which takes this adjacency matrix as input and gives us minimum cost route. The output will be sent to the frontend.
+
+Directions API of Google is used to render the output on the map, which renders the “driving” mode route between the cities.
+
+All executions were repeated 10 times using major cities within India. Cities are selected in the range starting from 5 and a maximum of 30 cities. As the tests were run, two metrics were measured: (i) running time and (ii) the cost of the tour generated by each algorithm. The results are shown in Fig1 and Fig2. It is evident from the results that all the algorithms that were employed give a far better solution than that of Google Maps. It is also found that PSO is giving the best cost solution among all the algorithms after 10 cities.
 
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=\columnwidth]{pathcost.png}}
@@ -269,49 +295,6 @@ Here, a parallel implementation of the 2-opt algorithm is used. CUDA is a framew
 \caption{Running time comparison.}
 \label{fig2}
 \end{figure}
-
-
-\begin{figure}[htbp]
-\centerline{\includegraphics[width=\columnwidth]{tspResultApp.png}}
-\caption{Tour planned by The Application(cost=37KM).}
-\label{fig3}
-\end{figure}
-
-
-\begin{figure}[htbp]
-\centerline{\includegraphics[width=\columnwidth]{tspResultGoogle.png}}
-\caption{Tour planned by the Google Map (cost=61KM).}
-\label{fig4}
-\end{figure}
-
-\begin{table}[h!]
-  \begin{center}
-    \label{tab:table4}
-    \begin{tabular}{l|c|r}
-      \textbf{Number of Cities} & \textbf{Path Cost (km)}\\
-      \hline
-      5 & 693\\
-      10 & 5771\\
-      15 & 9163\\
-      20 & 13839\\ 
-      25 & 17689\\
-      30 & 21333\\
-    \end{tabular}
-    \caption{Experimental results for Google Maps Application}
-  \end{center}
-\end{table}
-
-
-\section {Implementation}
-For implementation purpose, Google maps API is used. For rendering and locating a node (marker), ‘map’ and ‘geocoder’ service provided by Google are used. Google Maps API also gives the information about the latitude, longitude and place address. For fetching the road distance between all the pairs of the cities, distance matrix service provided by Google is used. It takes latitude and longitude as input and returns road distance and time required to cover that distance.
-
-Input data (complete graph) is created which contains distance information of every pair of nodes. After this, backend is called using web service and give this complete graph for further processing.
-
-A web server is used to receive the input from frontend, This complete graph is then converted into an adjacency matrix. The algorithms (PSO or ABC or PTO) is executed in the backend which takes this adjacency matrix as input and gives us minimum cost route. The output will be sent to the frontend.
-
-Directions API of Google is used to render the output on the map, which renders the “driving” mode route between the cities.
-
-All executions were repeated 10 times using major cities within India. Cities are selected in the range starting from 5 and a maximum of 30 cities. As the tests were run, two metrics were measured: (i) running time and (ii) the cost of the tour generated by each algorithm. The results are shown in Fig1 and Fig2. It is evident from the results that all the algorithms that were employed give a far better solution than that of Google Maps. It is also found that PSO is giving the best cost solution among all the algorithms after 10 cities.
 
 The web application provides the user the ability to calculate the route based on distance or time. Two buttons are provided in the interface to serve this purpose. After marking all the desired locations, the user can click on either of the two buttons and the route with the desired property will be shown on the map. It is not the case that the route with minimum distance and the route with minimum time will be the same. There are cases in which the two routes are different. An example that illustrates this difference is shown on Figure 5 and Figure 6.
 
@@ -327,6 +310,20 @@ Figures 5 and 6 show that the web application can be configured to provide optim
 
 
 \begin{figure}[htbp]
+\centerline{\includegraphics[width=\columnwidth]{tspResultApp.png}}
+\caption{Tour planned by The Application(cost=37KM).}
+\label{fig3}
+\end{figure}
+
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=\columnwidth]{tspResultGoogle.png}}
+\caption{Tour planned by the Google Map (cost=61KM).}
+\label{fig4}
+\end{figure}
+
+
+\begin{figure}[htbp]
 \centerline{\includegraphics[width=\columnwidth]{distance.png}}
 \caption{Route By Time.}
 \label{fig5}
@@ -339,7 +336,7 @@ Figures 5 and 6 show that the web application can be configured to provide optim
 \end{figure}
 
 \section {Conclusion \& Future Work}
-A web application was created that provides an interface to select multiple locations. The application will give an optimal route back to the user. Depending on the choice, this route will be optimized either for minimum distance or minimum time. After comparing the three algorithms, the conclusion was made that (i) If the use case is limited to less than 10 cities, both ABC and PSO gives the same minimum cost, but PSO takes more time. So, ABC is recommended in this case. (ii) If the use case exceeds 10 cities, the running time as well as the quality of the route given by Particle Swarm Optimization is better than Artificial Bee Colony and 2-opt. Hence, PSO is preferred in this case. In this paper, three algorithms are compared which are popular among the ones solving the Traveling Salesman Problem. As a continuation of this work, other algorithms can be explored and the framework can be improved to make it more generalised.
+A web application was created that provides an interface to select multiple locations. The application will give an optimal route back to the user. Depending on the choice, this route will be optimized either for minimum distance or minimum time. After comparing the three algorithms, the conclusion was made that (i) If the use case is limited to less than 10 cities, both ABC and PSO gives the same minimum cost, but PSO takes more time. So, ABC is recommended in this case. (ii) If the use case exceeds 10 cities, the running time as well as the quality of the route given by Particle Swarm Optimization is better than Artificial Bee Colony and 2-Opt. Hence, PSO is preferred in this case. In this paper, three algorithms are compared which are popular among the ones solving the Traveling Salesman Problem. As a continuation of this work, other algorithms can be explored and the framework can be improved to make it more generalised.
 
 
 \begin{thebibliography}{00}
