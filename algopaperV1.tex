@@ -27,7 +27,7 @@ Mangalore, India \\
 \maketitle
 
 \begin{abstract}
-Millions of people depend on the navigation facilities available in smartphones and web browsers for their daily commutes, planning long trips ahead of time, looking up places etc. Integration of GPS and compass made navigating anywhere in the world a trivial task. Today, there are several applications available that fit the purpose of navigation such as Waze, HereWeGo (previously known as Here Maps by Nokia), Google Maps, etc. When Google Maps was used to embark on a tour that will take us to chosen places by covering the least distance possible, it is observed that none of the aforementioned applications provide such a feature. In this paper, a framework is developed with Google Maps APIs to create such a feature. This problem is mapped to the Traveling salesman problem and tried to solve it using algorithms known for approximating TSP such as Artificial Bee Colony Algorithm, Particle Swarm Optimization and Two-opt Algorithm. The framework is tested with these algorithms and found that, Particle Swarm Optimization gives the best possible route.
+Millions of people depend on the navigation facilities available in smart-phones and web browsers for their daily commutes, planning long trips ahead of time, looking up places etc. Integration of GPS and compass made navigating anywhere in the world a trivial task. Today, there are several applications available that fit the purpose of navigation such as Waze, HereWeGo (previously known as Here Maps by Nokia), Google Maps, etc. When Google Maps was used to embark on a tour that will take us to chosen places by covering the least distance possible, it is observed that none of the aforementioned applications provide such a feature. In this paper, a framework is developed with Google Maps APIs to create such a feature. This problem is mapped to the Traveling salesman problem and tried to solve it using algorithms known for approximating TSP such as Artificial Bee Colony Algorithm, Particle Swarm Optimization and Two-opt Algorithm. The framework is tested with these algorithms and found that, Particle Swarm Optimization gives the best possible route.
 
 \end{abstract}
 
@@ -57,8 +57,8 @@ In this paper, a solution is proposed to this issue in the form of a web applica
 \subsection {Travelling Salesman Problem}
 
 Travelling Salesman problem is a very popular NP-Hard optimization problem. Traveling Salesman Problem can be stated as follows: Given N number of cities, a salesman needs to travel to all cities. In doing so, the salesman must be careful about two constraints. Firstly, he must visit a city exactly once and the other constraint is he must traverse through the N number of cities and return to his starting point by traveling the minimum distance possible. The solution to this problem is a list of cities in the order which allows for minimum distance traversal. Three algorithms are used to solve this problem so as to find a solution to the original problem. The algorithms are Artificial Bee Colony Algorithm, Particle Swarm Optimization, and Parallel Two-opt Algorithm. A brief description of these algorithms can be found below.
-
-
+\linebreak
+\par
 The rest of the paper is organized as follows: In section 2, an explanation of algorithms used to solve TSP is done. A description of how the web application is implemented can be found in section 3. Then in the same section, comparisons of the performance of the said algorithms are made on the grounds of execution time and generation of the best route (Best route, in this case, is the route with the minimum distance or shortest time). Lastly, the paper ends with a conclusion.
 
 \section {Related Works}
@@ -68,12 +68,12 @@ Vehicle routing problem is another specific version of the problem, which deals 
 
 Tracking for safety purpose is another map related application which uses GPS to track the entire fleet of taxi service. This will allow the company/user to track its vehicles as well as improve the safety of passengers. There are two types of tracking: passive and active. When the GPS data is collected in a device but it is not transmitted, it is called passive tracking. Collected data is retrieved only when the vehicle returns to the company. This cannot ensure the safety of customers. In the case of active tracking, the data collected by various sensors are transmitted in near real-time. This ensures that the activities are supervised and safety of passengers is ensured.  
 
-In the case of TSP, a large number of approximate algorithms have been developed.There are a number of real world problems which can  be generalised to TSP[7]. A broad area of research for TSP approximation is genetic algorithms. There are specific techniques to find the subsequent generations in GA and all of them are compared here[8]. Nature-inspired algorithms for solving TSP include Artificial Bee Colony Optimization[9], Ant Colony Optimization[10], Particle Swarm Optimization[11][12]. A hybrid method to solve TSP[13] is also in the literature which considers different algorithms for different situations. Since TSP can be broken down into sub-problems for some specific cases, these cases can be highly optimized with parallel coding architecture. Much work has been done with regards to solving TSP with parallel programs[14],[15]. All the above meta-heuristic algorithms have been adopted to take advantage of parallelization. A number of greedy algorithms are also developed as an approximation strategy to conquer TSP, like lin-kernighen, greedy 2-Opt, 2-mst, etc. 
+In the case of TSP, a large number of approximate algorithms have been developed.There are a number of real world problems which can  be generalized to TSP[7]. A broad area of research for TSP approximation is genetic algorithms. There are specific techniques to find the subsequent generations in GA and all of them are compared here[8]. Nature-inspired algorithms for solving TSP include Artificial Bee Colony Optimization[9], Ant Colony Optimization[10], Particle Swarm Optimization[11][12]. A hybrid method to solve TSP[13] is also in the literature which considers different algorithms for different situations. Since TSP can be broken down into sub-problems for some specific cases, these cases can be highly optimized with parallel coding architecture. Much work has been done with regards to solving TSP with parallel programs[14],[15]. All the above meta-heuristic algorithms have been adopted to take advantage of parallelization. A number of greedy algorithms are also developed as an approximation strategy to conquer TSP, like lin-kernighen, greedy 2-Opt, 2-mst, etc. 
 
 
 \section{Algorithms}
 \subsection {Artificial Bee Colony with SPV rule (ABC)}
-Swarm-based metaheuristic algorithm ABC is designed based on the behavior of honey bees. A Bee Colony has three kinds of bees: Employed bees, Onlooker bees, and Scout bees. Each of these bees serves a specific purpose. The number of solutions made for the initial permutation of the cities is called population size. The solutions are randomly initialized. The dimension of each solution will be of the number of cities. The fitness function will give you the cost of the solution which you pass from the population. 
+Swarm-based meta-heuristic algorithm ABC is designed based on the behavior of honey bees. A Bee Colony has three kinds of bees: Employed bees, Onlooker bees, and Scout bees. Each of these bees serves a specific purpose. The number of solutions made for the initial permutation of the cities is called population size. The solutions are randomly initialized. The dimension of each solution will be of the number of cities. The fitness function will give you the cost of the solution which you pass from the population. 
 
 ABC algorithm by itself cannot be used for solving the Traveling Salesman Problem. This is because ABC uses real number generation to obtain new solutions but Traveling Salesman Problem requires discrete values. This can be solved by applying SPV rule.More details on SPV rule can be found here [16]. SPV rule will convert the random real numbers generated into discrete values in their increasing order. For eg. Consider an instance of TSP with 5 cities. Suppose ABC has generated  a solution [0.5, 2.5, 1.2, 4.5, 4.0]. SPV rule will convert this solution into [0, 2, 1, 4, 3].  The algorithm is as follows:
 
@@ -93,7 +93,7 @@ ABC algorithm by itself cannot be used for solving the Traveling Salesman Proble
 \REPEAT
 \STATE [Phase for Employed Bees]
 
-\FOR {eb=0 to no. of emplyoed bees}
+\FOR {eb=0 to no. of employed bees}
 \FOR {nc=0 to no. of cities}
 \STATE generate a new solution from existing solution
 \STATE convert this solution to a discrete solution using SPV rule
@@ -147,7 +147,7 @@ ABC algorithm by itself cannot be used for solving the Traveling Salesman Proble
 
 
 \subsection {Particle Swarm Optimization (PSO)}
-In PSO, each candidate solution is called a particle and candidate solution is iteratively improved based on a desired property. Each particle moves across the solution space and  updates its velocity at regular interval of time to get the best position (personal best) and the globally best position is found out by the complete swarm (global best). To arrive at the best position, each particle utilize the present best solution known to them and global best solution which is available till now. PSO starts with a random group of solutions and then search is conducted iteratively. Particle swarm optimization to solve the traveling salesman problem uses the concept of swap operator and swap sequence and modifies operator if required[17]. 
+In PSO, each candidate solution is called a particle and candidate solution is incrementally improved based on a desired property. Each particle moves across the solution space and  updates its velocity at regular interval of time to get the best position (personal best) and the globally best position is found out by the complete swarm (global best). To arrive at the best position, each particle utilize the present best solution known to them and global best solution which is available till now. PSO starts with a random group of solutions and then search is conducted incrementally. Particle swarm optimization to solve the traveling salesman problem uses the concept of swap operator and swap sequence and modifies operator if required[17]. 
 
 \begin{algorithm}[H]
 \caption{Algorithm for PSO}
@@ -248,7 +248,7 @@ In PSO, each candidate solution is called a particle and candidate solution is i
 
 
 
-Here, a parallel implementation of the 2-Opt algorithm is used. CUDA is a framework developed by NVIDIA for their graphics cards. CUDA lets you write serial “kernels” which are parallelized by the compiler with GCC at its backend. NVCC is the compiler which converts the program into parallel code. When the program is run, it is first copied into the GPU memory and then executed. This causes an overhead for any program that is executed on the GPU. 
+Here, a parallel implementation of the 2-Opt algorithm is used. CUDA is a framework developed by NVIDIA for their graphics cards. CUDA lets you write serial “kernels” which are parallelized by the compiler with GCC at its back-end. NVCC is the compiler which converts the program into parallel code. When the program is run, it is first copied into the GPU memory and then executed. This causes an overhead for any program that is executed on the GPU. 
 
  The algorithm here utilizes the parallel processing capabilities of Tesla K40 GPU and is able to outperform the other algorithms when the number of cities is very large.If smaller values of n(number of cities) are considered for TSP, the program is actually slower than the serial code, but as the n value increases, the overhead becomes less significant and reaches to a point where the parallel code is orders of magnitude higher than serial code. The architecture of the code is in such a way that the cost-matrix is copied onto the device from CPU and the code which identifies the 2-Opt routes and corrects them in the graph is run simultaneously on hundreds of streaming multiprocessors[18]. 
 
@@ -276,9 +276,9 @@ Here, a parallel implementation of the 2-Opt algorithm is used. CUDA is a framew
 
 For implementation purpose, Google maps API is used. For rendering and locating a node (marker), ‘map’ and ‘geocoder’ service provided by Google are used. Google Maps API also gives the information about the latitude, longitude and place address. For fetching the road distance between all the pairs of the cities, distance matrix service provided by Google is used. It takes latitude and longitude as input and returns road distance and time required to cover that distance.
 
-Input data (complete graph) is created which contains distance information of every pair of nodes. After this, backend is called using web service and give this complete graph for further processing.
+Input data (complete graph) is created which contains distance information of every pair of nodes. After this, back-end is called using web service and give this complete graph for further processing.
 
-A web server is used to receive the input from frontend, This complete graph is then converted into an adjacency matrix. The algorithms (PSO or ABC or PTO) is executed in the backend which takes this adjacency matrix as input and gives us minimum cost route. The output will be sent to the frontend.
+A web server is used to receive the input from front-end, This complete graph is then converted into an adjacency matrix. The algorithms (PSO or ABC or PTO) is executed in the back-end which takes this adjacency matrix as input and gives us minimum cost route. The output will be sent to the front-end.
 
 Directions API of Google is used to render the output on the map, which renders the “driving” mode route between the cities.
 
@@ -336,7 +336,7 @@ Figures 5 and 6 show that the web application can be configured to provide optim
 \end{figure}
 
 \section {Conclusion \& Future Work}
-A web application was created that provides an interface to select multiple locations. The application will give an optimal route back to the user. Depending on the choice, this route will be optimized either for minimum distance or minimum time. After comparing the three algorithms, the conclusion was made that (i) If the use case is limited to less than 10 cities, both ABC and PSO gives the same minimum cost, but PSO takes more time. So, ABC is recommended in this case. (ii) If the use case exceeds 10 cities, the running time as well as the quality of the route given by Particle Swarm Optimization is better than Artificial Bee Colony and 2-Opt. Hence, PSO is preferred in this case. In this paper, three algorithms are compared which are popular among the ones solving the Traveling Salesman Problem. As a continuation of this work, other algorithms can be explored and the framework can be improved to make it more generalised.
+A web application was created that provides an interface to select multiple locations. The application will give an optimal route back to the user. Depending on the choice, this route will be optimized either for minimum distance or minimum time. After comparing the three algorithms, the conclusion was made that (i) If the use case is limited to less than 10 cities, both ABC and PSO gives the same minimum cost, but PSO takes more time. So, ABC is recommended in this case. (ii) If the use case exceeds 10 cities, the running time as well as the quality of the route given by Particle Swarm Optimization is better than Artificial Bee Colony and 2-Opt. If number of cities chosen is more than 40, then 2-Opt outperforms other two algorithms, because it runs on GPU. Since it is required to load complete graph on GPU memory from CPU memory, it takes some time, i.e. it is not convenient to use 2-Opt for number of cities less 40. Hence, PSO is preferred in this case. In this paper, three algorithms are compared which are popular among the ones solving the Traveling Salesman Problem. As a continuation of this work, other algorithms can be explored and the framework can be improved to make it more generalized.
 
 
 \begin{thebibliography}{00}
@@ -382,5 +382,4 @@ A web application was created that provides an interface to select multiple loca
 \end{thebibliography}
 \end{document}
 
-
-
+ 
