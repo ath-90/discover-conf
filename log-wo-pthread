@@ -1,0 +1,846 @@
+Setting top to                           : /home/ath/raspberrypi/ndn-cxx 
+Setting out to                           : /home/ath/raspberrypi/ndn-cxx/build 
+Building static library                  : no 
+Building shared library                  : yes 
+Checking for 'g++' (C++ compiler)        : arm-rpi-linux-gnueabihf-c++ 
+Checking C++ compiler version            : 7.4.1 
+Checking supported CXXFLAGS              : not found 
+Checking supported LINKFLAGS             : not found 
+Checking for std::to_string              : no 
+Checking for program 'doxygen'           : /usr/bin/doxygen 
+Checking for program 'tar'               : /bin/tar 
+Checking for program 'sphinx-build'      : /usr/bin/sphinx-build 
+Checking for program 'sh'                : /bin/sh 
+Checking for library pthread             : not found 
+Checking for library rt                  : not found 
+Checking for function getpass            : no 
+Checking for netlink                     : not found 
+Checking for program 'pkg-config'        : /usr/bin/pkg-config 
+Checking for 'sqlite3'                   : yes 
+Checking for OpenSSL version             : "OpenSSL 1.1.1c  28 May 2019" 
+Checking for program 'dpkg-architecture' : /usr/bin/dpkg-architecture 
+Checking boost includes                  : 1.67.0 
+Checking boost libs                      : boost_stacktrace_backtrace 
+Checking for boost linkage               : ok 
+Checking boost libs                      : boost_system boost_program_options boost_chrono boost_date_time boost_filesystem boost_thread boost_log boost_stacktrace_backtrace 
+Checking the flags needed to use pthreads : lpthread 
+Checking for boost linkage                : ok 
+'configure' finished successfully (1.098s)
+'clean' finished successfully (0.161s)
+Waf: Entering directory `/home/ath/raspberrypi/ndn-cxx/build'
+[  1/202] Compiling ndn-cxx/impl/common-pch.hpp
+[  2/202] Compiling libndn-cxx.pc.in
+[  3/202] Compiling tools/wrapper/ndnsec-delete.sh
+[  4/202] Compiling tools/wrapper/ndnsec-cert-gen.sh
+[  5/202] Compiling tools/wrapper/ndnsec-sign-req.sh
+[  6/202] Compiling tools/wrapper/ndnsec-keygen.sh
+[  7/202] Compiling tools/wrapper/ndnsec-ls-identity.sh
+[  8/202] Compiling tools/wrapper/ndnsec-install-cert.sh
+[  9/202] Compiling tools/wrapper/ndnsec-key-gen.sh
+[ 10/202] Compiling tools/wrapper/ndnsec-export.sh
+[ 11/202] Compiling tools/wrapper/ndnsec-set-default.sh
+[ 12/202] Compiling tools/wrapper/ndnsec-import.sh
+[ 13/202] Compiling tools/wrapper/ndnsec-cert-install.sh
+[ 14/202] Compiling tools/wrapper/ndnsec-unlock-tpm.sh
+[ 15/202] Compiling tools/wrapper/ndnsec-certgen.sh
+[ 16/202] Compiling tools/wrapper/ndnsec-get-default.sh
+[ 17/202] Compiling tools/wrapper/ndnsec-dump-certificate.sh
+[ 18/202] Compiling tools/wrapper/ndnsec-list.sh
+[ 19/202] Compiling tools/wrapper/ndnsec-cert-dump.sh
+[ 20/202] Processing sphinx_build [man]: docs/manpages/ndn-client.conf.rst docs/manpages/ndn-log.rst docs/manpages/ndnsec-cert-dump.rst docs/manpages/ndnsec-cert-gen.rst docs/manpages/ndnsec-cert-install.rst docs/manpages/ndnsec-delete.rst docs/manpages/ndnsec-export.rst docs/manpages/ndnsec-get-default.rst docs/manpages/ndnsec-import.rst docs/manpages/ndnsec-key-gen.rst docs/manpages/ndnsec-list.rst docs/manpages/ndnsec-set-default.rst docs/manpages/ndnsec-sign-req.rst docs/manpages/ndnsec-unlock-tpm.rst docs/manpages/ndnsec.rst docs/conf.py -> build/docs/manpages/ndnsec.1 build/docs/manpages/ndnsec-cert-dump.1 build/docs/manpages/ndnsec-cert-gen.1 build/docs/manpages/ndnsec-cert-install.1 build/docs/manpages/ndnsec-delete.1 build/docs/manpages/ndnsec-export.1 build/docs/manpages/ndnsec-get-default.1 build/docs/manpages/ndnsec-import.1 build/docs/manpages/ndnsec-key-gen.1 build/docs/manpages/ndnsec-list.1 build/docs/manpages/ndnsec-set-default.1 build/docs/manpages/ndnsec-sign-req.1 build/docs/manpages/ndnsec-unlock-tpm.1 build/docs/manpages/ndn-client.conf.5 build/docs/manpages/ndn-log.7
+
+/home/ath/.local/lib/python2.7/site-packages/requests/__init__.py:91: RequestsDependencyWarning: urllib3 (1.25.6) or chardet (3.0.4) doesn't match a supported version!
+  RequestsDependencyWarning)
+/home/ath/raspberrypi/ndn-cxx/docs/examples.rst:13: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/examples.rst:13: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/examples.rst:29: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/examples.rst:34: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/examples.rst:39: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/examples.rst:51: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/examples.rst:54: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/examples.rst:54: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:18: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:21: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:21: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:37: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:39: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:44: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:44: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:47: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:53: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:53: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:63: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:66: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:66: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:66: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:69: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:83: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:83: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:97: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:97: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:97: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:97: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:97: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:102: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:114: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:117: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:122: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:142: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:144: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:148: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:150: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:155: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:161: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.2.0.rst:171: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.3.1.rst:13: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.3.1.rst:13: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.3.1.rst:16: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.3.1.rst:25: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.3.1.rst:28: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.5.1.rst:25: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.5.1.rst:33: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.5.1.rst:47: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.5.1.rst:69: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.5.1.rst:71: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.5.1.rst:71: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.5.1.rst:76: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.5.1.rst:76: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.5.1.rst:76: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.5.1.rst:82: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.5.1.rst:82: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.6.0.rst:14: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.6.0.rst:14: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.6.0.rst:110: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.6.0.rst:116: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.6.0.rst:116: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.6.0.rst:116: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.6.0.rst:122: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.6.0.rst:122: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.6.1.rst:9: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.6.1.rst:9: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.6.1.rst:13: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.6.1.rst:31: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.6.1.rst:37: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.6.1.rst:43: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.6.1.rst:49: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/release-notes/release-notes-0.6.1.rst:55: WARNING: Unknown interpreted text role "ndn-cxx".
+/home/ath/raspberrypi/ndn-cxx/docs/specs/validation-error-code.rst:4: WARNING: Unknown interpreted text role "ndn-cxx".
+
+[ 21/202] Compiling ndn-cxx/util/regex/regex-pseudo-matcher.cpp
+[ 22/202] Compiling ndn-cxx/security/pib/impl/identity-impl.cpp
+[ 23/202] Compiling ndn-cxx/util/logging.cpp
+[ 24/202] Compiling ndn-cxx/lp/nack.cpp
+[ 25/202] Compiling ndn-cxx/security/tpm/back-end-file.cpp
+[ 26/202] Compiling ndn-cxx/util/regex/regex-backref-matcher.cpp
+[ 27/202] Compiling ndn-cxx/name-component.cpp
+[ 28/202] Compiling ndn-cxx/net/network-interface.cpp
+[ 29/202] Compiling ndn-cxx/util/sqlite3-statement.cpp
+[ 30/202] Compiling ndn-cxx/security/signing-info.cpp
+[ 31/202] Compiling ndn-cxx/security/pib/identity.cpp
+[ 32/202] Compiling ndn-cxx/transport/unix-transport.cpp
+[ 33/202] Compiling ndn-cxx/metadata-object.cpp
+[ 34/202] Compiling ndn-cxx/security/v2/certificate-bundle-fetcher.cpp
+[ 35/202] Compiling ndn-cxx/link.cpp
+[ 36/202] Compiling ndn-cxx/util/signal/scoped-connection.cpp
+[ 37/202] Compiling ndn-cxx/util/indented-stream.cpp
+[ 38/202] Compiling ndn-cxx/net/impl/linux-if-constants.cpp
+[ 39/202] Compiling ndn-cxx/security/validator-config.cpp
+[ 40/202] Compiling ndn-cxx/security/validity-period.cpp
+../ndn-cxx/link.cpp: In constructor 'ndn::Link::Link(const ndn::Name&, std::initializer_list<ndn::Delegation>)':
+../ndn-cxx/link.cpp:40:1: note: parameter passing for argument of type 'std::initializer_list<ndn::Delegation>' changed in GCC 7.1
+ Link::Link(const Name& name, std::initializer_list<Delegation> dels)
+ ^~~~
+../ndn-cxx/link.cpp:42:19: note: parameter passing for argument of type 'std::initializer_list<ndn::Delegation>' changed in GCC 7.1
+   , m_delList(dels)
+                   ^
+
+[ 41/202] Compiling ndn-cxx/key-locator.cpp
+[ 42/202] Compiling ndn-cxx/mgmt/nfd/channel-status.cpp
+[ 43/202] Compiling ndn-cxx/security/transform/transform-base.cpp
+In file included from /home/ath/raspberrypi/rootfs/usr/include/boost/log/sinks/sink.hpp:21:0,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/log/sinks.hpp:20,
+                 from ../ndn-cxx/util/logging.hpp:31,
+                 from ../ndn-cxx/util/logging.cpp:22:
+/home/ath/raspberrypi/rootfs/usr/include/boost/log/detail/light_function.hpp: In static member function 'static boost::log::v2s_mt_posix::aux::light_function<void(ArgsT ...)>::result_type boost::log::v2s_mt_posix::aux::light_function<void(ArgsT ...)>::impl<FunT>::invoke_impl(void*, ArgsT ...) [with FunT = boost::phoenix::actor<boost::proto::exprns_::basic_expr<boost::proto::tagns_::tag::shift_left, boost::proto::argsns_::list2<boost::phoenix::actor<boost::proto::exprns_::basic_expr<boost::proto::tagns_::tag::shift_left, boost::proto::argsns_::list2<boost::phoenix::actor<boost::log::v2s_mt_posix::expressions::aux::attribute_output_terminal<boost::phoenix::actor<boost::proto::exprns_::basic_expr<boost::proto::tagns_::tag::shift_left, boost::proto::argsns_::list2<boost::phoenix::actor<boost::proto::exprns_::basic_expr<boost::proto::tagns_::tag::shift_left, boost::proto::argsns_::list2<boost::phoenix::actor<boost::log::v2s_mt_posix::expressions::aux::attribute_output_terminal<boost::phoenix::actor<boost::proto::exprns_::basic_expr<boost::proto::tagns_::tag::shift_left, boost::proto::argsns_::list2<boost::phoenix::actor<boost::proto::exprns_::basic_expr<boost::proto::tagns_::tag::shift_left, boost::proto::argsns_::list2<boost::phoenix::actor<boost::log::v2s_mt_posix::expressions::aux::attribute_output_terminal<boost::phoenix::actor<boost::proto::exprns_::basic_expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::phoenix::argument<2> >, 0> >, std::__cxx11::basic_string<char>, boost::log::v2s_mt_posix::fallback_to_none, boost::log::v2s_mt_posix::to_log_fun<void> > >, boost::phoenix::actor<boost::proto::exprns_::basic_expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<char [2]>, 0> > >, 2> >, boost::phoenix::actor<boost::proto::exprns_::basic_expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<std::_Setw>, 0> > >, 2> >, ndn::util::LogLevel, boost::log::v2s_mt_posix::fallback_to_none, boost::log::v2s_mt_posix::to_log_fun<void> > >, boost::phoenix::actor<boost::proto::exprns_::basic_expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<char [3]>, 0> > >, 2> >, boost::phoenix::actor<boost::proto::exprns_::basic_expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<char [2]>, 0> > >, 2> >, std::__cxx11::basic_string<char>, boost::log::v2s_mt_posix::fallback_to_none, boost::log::v2s_mt_posix::to_log_fun<void> > >, boost::phoenix::actor<boost::proto::exprns_::basic_expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<char [3]>, 0> > >, 2> >, boost::log::v2s_mt_posix::expressions::attribute_actor<std::__cxx11::basic_string<char>, boost::log::v2s_mt_posix::fallback_to_none, boost::log::v2s_mt_posix::expressions::tag::smessage, boost::phoenix::actor> >, 2> >; ArgsT = {const boost::log::v2s_mt_posix::record_view&, boost::log::v2s_mt_posix::expressions::aux::stream_ref<boost::log::v2s_mt_posix::basic_formatting_ostream<char, std::char_traits<char>, std::allocator<char> > >}]':
+/home/ath/raspberrypi/rootfs/usr/include/boost/log/detail/light_function.hpp:360:28: note: parameter passing for argument of type 'boost::log::v2s_mt_posix::expressions::aux::stream_ref<boost::log::v2s_mt_posix::basic_formatting_ostream<char> >' changed in GCC 7.1
+         static result_type invoke_impl(void* self, ArgsT... args)
+                            ^~~~~~~~~~~
+/home/ath/raspberrypi/rootfs/usr/include/boost/log/detail/light_function.hpp: In static member function 'static boost::log::v2s_mt_posix::aux::light_function<void(ArgsT ...)>::result_type boost::log::v2s_mt_posix::aux::light_function<void(ArgsT ...)>::impl<FunT>::invoke_impl(void*, ArgsT ...) [with FunT = boost::log::v2s_mt_posix::expressions::aux::message_formatter; ArgsT = {const boost::log::v2s_mt_posix::record_view&, boost::log::v2s_mt_posix::expressions::aux::stream_ref<boost::log::v2s_mt_posix::basic_formatting_ostream<char, std::char_traits<char>, std::allocator<char> > >}]':
+/home/ath/raspberrypi/rootfs/usr/include/boost/log/detail/light_function.hpp:360:28: note: parameter passing for argument of type 'boost::log::v2s_mt_posix::expressions::aux::stream_ref<boost::log::v2s_mt_posix::basic_formatting_ostream<char> >' changed in GCC 7.1
+
+[ 44/202] Compiling ndn-cxx/security/v2/certificate-storage.cpp
+[ 45/202] Compiling ndn-cxx/encoding/nfd-constants.cpp
+[ 46/202] Compiling ndn-cxx/security/v2/validator.cpp
+[ 47/202] Compiling ndn-cxx/util/signal/connection.cpp
+[ 48/202] Compiling ndn-cxx/security/pib/pib-sqlite3.cpp
+[ 49/202] Compiling ndn-cxx/net/dns.cpp
+[ 50/202] Compiling ndn-cxx/interest-filter.cpp
+[ 51/202] Compiling ndn-cxx/name.cpp
+[ 52/202] Compiling ndn-cxx/net/impl/link-type-helper.cpp
+In file included from /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/vector:69:0,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/math_fwd.hpp:26,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/sign.hpp:17,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/inf_nan.hpp:34,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:63,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/try_lexical_convert.hpp:42,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast.hpp:32,
+                 from ../ndn-cxx/util/backports.hpp:88,
+                 from ../ndn-cxx/detail/common.hpp:121,
+                 from ./../ndn-cxx/impl/common-pch.hpp:28,
+                 from <command-line>:0:
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc: In member function 'void std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {const boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, boost::asio::wait_traits<std::chrono::_V2::steady_clock> > >::heap_entry&}; _Tp = boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, boost::asio::wait_traits<std::chrono::_V2::steady_clock> > >::heap_entry; _Alloc = std::allocator<boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, boost::asio::wait_traits<std::chrono::_V2::steady_clock> > >::heap_entry>]':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc:394:7: note: parameter passing for argument of type 'std::vector<boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, boost::asio::wait_traits<std::chrono::_V2::steady_clock> > >::heap_entry, std::allocator<boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, boost::asio::wait_traits<std::chrono::_V2::steady_clock> > >::heap_entry> >::iterator {aka __gnu_cxx::__normal_iterator<boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, boost::asio::wait_traits<std::chrono::_V2::steady_clock> > >::heap_entry*, std::vector<boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, boost::asio::wait_traits<std::chrono::_V2::steady_clock> > >::heap_entry, std::allocator<boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, boost::asio::wait_traits<std::chrono::_V2::steady_clock> > >::heap_entry> > >}' changed in GCC 7.1
+       vector<_Tp, _Alloc>::
+       ^~~~~~~~~~~~~~~~~~~
+In file included from /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/vector:64:0,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/math_fwd.hpp:26,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/sign.hpp:17,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/inf_nan.hpp:34,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:63,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/try_lexical_convert.hpp:42,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast.hpp:32,
+                 from ../ndn-cxx/util/backports.hpp:88,
+                 from ../ndn-cxx/detail/common.hpp:121,
+                 from ./../ndn-cxx/impl/common-pch.hpp:28,
+                 from <command-line>:0:
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_vector.h: In member function 'void boost::asio::detail::epoll_reactor::schedule_timer(boost::asio::detail::timer_queue<Time_Traits>&, const typename Time_Traits::time_type&, typename boost::asio::detail::timer_queue<Time_Traits>::per_timer_data&, boost::asio::detail::wait_op*) [with Time_Traits = boost::asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, boost::asio::wait_traits<std::chrono::_V2::steady_clock> >]':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_vector.h:948:21: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, boost::asio::wait_traits<std::chrono::_V2::steady_clock> > >::heap_entry*, std::vector<boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, boost::asio::wait_traits<std::chrono::_V2::steady_clock> > >::heap_entry, std::allocator<boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, boost::asio::wait_traits<std::chrono::_V2::steady_clock> > >::heap_entry> > >' changed in GCC 7.1
+    _M_realloc_insert(end(), __x);
+    ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+
+[ 53/202] Compiling ndn-cxx/security/v2/validation-state.cpp
+[ 54/202] Compiling ndn-cxx/security/transform/buffer-source.cpp
+[ 55/202] Compiling ndn-cxx/lp/packet.cpp
+[ 56/202] Compiling ndn-cxx/ims/in-memory-storage-entry.cpp
+[ 57/202] Compiling ndn-cxx/encoding/estimator.cpp
+[ 58/202] Compiling ndn-cxx/security/v2/key-chain.cpp
+[ 59/202] Compiling ndn-cxx/face.cpp
+[ 60/202] Compiling ndn-cxx/encoding/block-helpers.cpp
+[ 61/202] Compiling ndn-cxx/net/face-uri.cpp
+[ 62/202] Compiling ndn-cxx/encoding/tlv.cpp
+[ 63/202] Compiling ndn-cxx/security/transform/bool-sink.cpp
+[ 64/202] Compiling ndn-cxx/mgmt/nfd/fib-entry.cpp
+[ 65/202] Compiling ndn-cxx/mgmt/nfd/face-status.cpp
+[ 66/202] Compiling ndn-cxx/mgmt/nfd/face-query-filter.cpp
+[ 67/202] Compiling ndn-cxx/util/regex/regex-pattern-list-matcher.cpp
+[ 68/202] Compiling ndn-cxx/encoding/encoder.cpp
+[ 69/202] Compiling ndn-cxx/encoding/buffer-stream.cpp
+[ 70/202] Compiling ndn-cxx/security/v2/validator-config/checker.cpp
+[ 71/202] Compiling ndn-cxx/security/key-params.cpp
+In file included from /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/vector:69:0,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/math_fwd.hpp:26,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/sign.hpp:17,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/inf_nan.hpp:34,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:63,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/try_lexical_convert.hpp:42,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast.hpp:32,
+                 from ../ndn-cxx/util/backports.hpp:88,
+                 from ../ndn-cxx/detail/common.hpp:121,
+                 from ./../ndn-cxx/impl/common-pch.hpp:28,
+                 from <command-line>:0:
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc: In member function 'void std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {const ndn::nfd::NextHopRecord&}; _Tp = ndn::nfd::NextHopRecord; _Alloc = std::allocator<ndn::nfd::NextHopRecord>]':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc:394:7: note: parameter passing for argument of type 'std::vector<ndn::nfd::NextHopRecord>::iterator {aka __gnu_cxx::__normal_iterator<ndn::nfd::NextHopRecord*, std::vector<ndn::nfd::NextHopRecord> >}' changed in GCC 7.1
+       vector<_Tp, _Alloc>::
+       ^~~~~~~~~~~~~~~~~~~
+In file included from /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/vector:64:0,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/math_fwd.hpp:26,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/sign.hpp:17,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/inf_nan.hpp:34,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:63,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/try_lexical_convert.hpp:42,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast.hpp:32,
+                 from ../ndn-cxx/util/backports.hpp:88,
+                 from ../ndn-cxx/detail/common.hpp:121,
+                 from ./../ndn-cxx/impl/common-pch.hpp:28,
+                 from <command-line>:0:
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_vector.h: In member function 'ndn::nfd::FibEntry& ndn::nfd::FibEntry::addNextHopRecord(const ndn::nfd::NextHopRecord&)':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_vector.h:948:21: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<ndn::nfd::NextHopRecord*, std::vector<ndn::nfd::NextHopRecord> >' changed in GCC 7.1
+    _M_realloc_insert(end(), __x);
+    ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/vector:69:0,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/math_fwd.hpp:26,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/sign.hpp:17,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/inf_nan.hpp:34,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:63,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/try_lexical_convert.hpp:42,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast.hpp:32,
+                 from ../ndn-cxx/util/backports.hpp:88,
+                 from ../ndn-cxx/detail/common.hpp:121,
+                 from ./../ndn-cxx/impl/common-pch.hpp:28,
+                 from <command-line>:0:
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc: In member function 'void std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {const ndn::Block&}; _Tp = ndn::nfd::NextHopRecord; _Alloc = std::allocator<ndn::nfd::NextHopRecord>]':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc:394:7: note: parameter passing for argument of type 'std::vector<ndn::nfd::NextHopRecord>::iterator {aka __gnu_cxx::__normal_iterator<ndn::nfd::NextHopRecord*, std::vector<ndn::nfd::NextHopRecord> >}' changed in GCC 7.1
+       vector<_Tp, _Alloc>::
+       ^~~~~~~~~~~~~~~~~~~
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc: In member function 'void ndn::nfd::FibEntry::wireDecode(const ndn::Block&)':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc:105:21: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<ndn::nfd::NextHopRecord*, std::vector<ndn::nfd::NextHopRecord> >' changed in GCC 7.1
+    _M_realloc_insert(end(), std::forward<_Args>(__args)...);
+    ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ 72/202] Compiling ndn-cxx/encoding/block.cpp
+[ 73/202] Compiling ndn-cxx/security/pib/pib-memory.cpp
+[ 74/202] Compiling ndn-cxx/security/pib/impl/key-impl.cpp
+[ 75/202] Compiling ndn-cxx/util/exception.cpp
+[ 76/202] Compiling ndn-cxx/signature-info.cpp
+[ 77/202] Compiling ndn-cxx/util/regex/regex-repeat-matcher.cpp
+[ 78/202] Compiling ndn-cxx/security/signing-helpers.cpp
+In file included from /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/map:60:0,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/exception/info.hpp:14,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/exception/detail/exception_ptr.hpp:14,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/exception_ptr.hpp:9,
+                 from ../ndn-cxx/util/exception.hpp:29,
+                 from ../ndn-cxx/detail/common.hpp:122,
+                 from ./../ndn-cxx/impl/common-pch.hpp:28,
+                 from <command-line>:0:
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_tree.h: In member function 'std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_get_insert_hint_unique_pos(std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::const_iterator, const key_type&) [with _Key = ndn::Name; _Val = std::pair<const ndn::Name, ndn::security::v2::Certificate>; _KeyOfValue = std::_Select1st<std::pair<const ndn::Name, ndn::security::v2::Certificate> >; _Compare = std::less<ndn::Name>; _Alloc = std::allocator<std::pair<const ndn::Name, ndn::security::v2::Certificate> >]':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_tree.h:2130:5: note: parameter passing for argument of type 'std::_Rb_tree<ndn::Name, std::pair<const ndn::Name, ndn::security::v2::Certificate>, std::_Select1st<std::pair<const ndn::Name, ndn::security::v2::Certificate> >, std::less<ndn::Name>, std::allocator<std::pair<const ndn::Name, ndn::security::v2::Certificate> > >::const_iterator {aka std::_Rb_tree_const_iterator<std::pair<const ndn::Name, ndn::security::v2::Certificate> >}' changed in GCC 7.1
+     _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_tree.h: In member function 'std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_emplace_hint_unique(std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::const_iterator, _Args&& ...) [with _Args = {const std::piecewise_construct_t&, std::tuple<const ndn::Name&>, std::tuple<>}; _Key = ndn::Name; _Val = std::pair<const ndn::Name, ndn::security::v2::Certificate>; _KeyOfValue = std::_Select1st<std::pair<const ndn::Name, ndn::security::v2::Certificate> >; _Compare = std::less<ndn::Name>; _Alloc = std::allocator<std::pair<const ndn::Name, ndn::security::v2::Certificate> >]':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_tree.h:2395:7: note: parameter passing for argument of type 'std::_Rb_tree<ndn::Name, std::pair<const ndn::Name, ndn::security::v2::Certificate>, std::_Select1st<std::pair<const ndn::Name, ndn::security::v2::Certificate> >, std::less<ndn::Name>, std::allocator<std::pair<const ndn::Name, ndn::security::v2::Certificate> > >::const_iterator {aka std::_Rb_tree_const_iterator<std::pair<const ndn::Name, ndn::security::v2::Certificate> >}' changed in GCC 7.1
+       _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/map:61:0,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/exception/info.hpp:14,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/exception/detail/exception_ptr.hpp:14,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/exception_ptr.hpp:9,
+                 from ../ndn-cxx/util/exception.hpp:29,
+                 from ../ndn-cxx/detail/common.hpp:122,
+                 from ./../ndn-cxx/impl/common-pch.hpp:28,
+                 from <command-line>:0:
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_map.h: In member function 'virtual void ndn::security::pib::PibMemory::addCertificate(const ndn::security::v2::Certificate&)':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_map.h:493:4: note: parameter passing for argument of type 'std::_Rb_tree<ndn::Name, std::pair<const ndn::Name, ndn::security::v2::Certificate>, std::_Select1st<std::pair<const ndn::Name, ndn::security::v2::Certificate> >, std::less<ndn::Name>, std::allocator<std::pair<const ndn::Name, ndn::security::v2::Certificate> > >::const_iterator {aka std::_Rb_tree_const_iterator<std::pair<const ndn::Name, ndn::security::v2::Certificate> >}' changed in GCC 7.1
+    __i = _M_t._M_emplace_hint_unique(__i, std::piecewise_construct,
+    ^~~
+
+[ 79/202] Compiling ndn-cxx/transport/transport.cpp
+[ 80/202] Compiling ndn-cxx/net/ethernet.cpp
+[ 81/202] Compiling ndn-cxx/mgmt/nfd/cs-info.cpp
+[ 82/202] Compiling ndn-cxx/detail/packet-base.cpp
+[ 83/202] Compiling ndn-cxx/security/v2/trust-anchor-group.cpp
+[ 84/202] Compiling ndn-cxx/detail/cancel-handle.cpp
+[ 85/202] Compiling ndn-cxx/security/impl/openssl-helper.cpp
+[ 86/202] Compiling ndn-cxx/delegation-list.cpp
+[ 87/202] Compiling ndn-cxx/security/v2/certificate-cache.cpp
+[ 88/202] Compiling ndn-cxx/mgmt/nfd/face-monitor.cpp
+[ 89/202] Compiling ndn-cxx/security/transform/stream-source.cpp
+In file included from /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/memory:65:0,
+                 from ../ndn-cxx/detail/common.hpp:58,
+                 from ./../ndn-cxx/impl/common-pch.hpp:28,
+                 from <command-line>:0:
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_uninitialized.h: In static member function 'static _ForwardIterator std::__uninitialized_copy<_TrivialValueTypes>::__uninit_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = __gnu_cxx::__normal_iterator<const ndn::Delegation*, std::vector<ndn::Delegation> >; _ForwardIterator = ndn::Delegation*; bool _TrivialValueTypes = false]':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_uninitialized.h:76:9: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<const ndn::Delegation*, std::vector<ndn::Delegation> >' changed in GCC 7.1
+         __uninit_copy(_InputIterator __first, _InputIterator __last,
+         ^~~~~~~~~~~~~
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_uninitialized.h:76:9: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<const ndn::Delegation*, std::vector<ndn::Delegation> >' changed in GCC 7.1
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_uninitialized.h: In copy constructor 'ndn::Interest::Interest(const ndn::Interest&)':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_uninitialized.h:134:41: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<const ndn::Delegation*, std::vector<ndn::Delegation> >' changed in GCC 7.1
+  __uninit_copy(__first, __last, __result);
+                                         ^
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_uninitialized.h: In member function 'std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = ndn::Delegation; _Alloc = std::allocator<ndn::Delegation>]':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_uninitialized.h:134:41: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<const ndn::Delegation*, std::vector<ndn::Delegation> >' changed in GCC 7.1
+  __uninit_copy(__first, __last, __result);
+                                         ^
+In file included from /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/map:60:0,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/exception/info.hpp:14,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/exception/detail/exception_ptr.hpp:14,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/exception_ptr.hpp:9,
+                 from ../ndn-cxx/util/exception.hpp:29,
+                 from ../ndn-cxx/detail/common.hpp:122,
+                 from ./../ndn-cxx/impl/common-pch.hpp:28,
+                 from <command-line>:0:
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_tree.h: In member function 'void std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_erase_aux(std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::const_iterator) [with _Key = unsigned int; _Val = std::pair<const unsigned int, ndn::PendingInterest>; _KeyOfValue = std::_Select1st<std::pair<const unsigned int, ndn::PendingInterest> >; _Compare = std::less<unsigned int>; _Alloc = std::allocator<std::pair<const unsigned int, ndn::PendingInterest> >]':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_tree.h:2470:5: note: parameter passing for argument of type 'std::_Rb_tree<unsigned int, std::pair<const unsigned int, ndn::PendingInterest>, std::_Select1st<std::pair<const unsigned int, ndn::PendingInterest> >, std::less<unsigned int>, std::allocator<std::pair<const unsigned int, ndn::PendingInterest> > >::const_iterator {aka std::_Rb_tree_const_iterator<std::pair<const unsigned int, ndn::PendingInterest> >}' changed in GCC 7.1
+     _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_tree.h: In member function 'std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::size_type std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::erase(const _Key&) [with _Key = unsigned int; _Val = std::pair<const unsigned int, ndn::PendingInterest>; _KeyOfValue = std::_Select1st<std::pair<const unsigned int, ndn::PendingInterest> >; _Compare = std::less<unsigned int>; _Alloc = std::allocator<std::pair<const unsigned int, ndn::PendingInterest> >]':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_tree.h:2491:16: note: parameter passing for argument of type 'std::_Rb_tree_const_iterator<std::pair<const unsigned int, ndn::PendingInterest> >' changed in GCC 7.1
+    _M_erase_aux(__first++);
+    ~~~~~~~~~~~~^~~~~~~~~~~
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_tree.h: In member function 'bool ndn::Face::Impl::satisfyPendingInterests(const ndn::Data&)':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_tree.h:1125:14: note: parameter passing for argument of type 'std::_Rb_tree<unsigned int, std::pair<const unsigned int, ndn::PendingInterest>, std::_Select1st<std::pair<const unsigned int, ndn::PendingInterest> >, std::less<unsigned int>, std::allocator<std::pair<const unsigned int, ndn::PendingInterest> > >::const_iterator {aka std::_Rb_tree_const_iterator<std::pair<const unsigned int, ndn::PendingInterest> >}' changed in GCC 7.1
+  _M_erase_aux(__position);
+  ~~~~~~~~~~~~^~~~~~~~~~~~
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_tree.h: In member function 'void ndn::Face::Impl::asyncPutData(const ndn::Data&)':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_tree.h:1125:14: note: parameter passing for argument of type 'std::_Rb_tree<unsigned int, std::pair<const unsigned int, ndn::PendingInterest>, std::_Select1st<std::pair<const unsigned int, ndn::PendingInterest> >, std::less<unsigned int>, std::allocator<std::pair<const unsigned int, ndn::PendingInterest> > >::const_iterator {aka std::_Rb_tree_const_iterator<std::pair<const unsigned int, ndn::PendingInterest> >}' changed in GCC 7.1
+  _M_erase_aux(__position);
+  ~~~~~~~~~~~~^~~~~~~~~~~~
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_tree.h: In member function 'void ndn::Face::Impl::asyncPutNack(const ndn::lp::Nack&)':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_tree.h:1125:14: note: parameter passing for argument of type 'std::_Rb_tree<unsigned int, std::pair<const unsigned int, ndn::PendingInterest>, std::_Select1st<std::pair<const unsigned int, ndn::PendingInterest> >, std::less<unsigned int>, std::allocator<std::pair<const unsigned int, ndn::PendingInterest> > >::const_iterator {aka std::_Rb_tree_const_iterator<std::pair<const unsigned int, ndn::PendingInterest> >}' changed in GCC 7.1
+  _M_erase_aux(__position);
+  ~~~~~~~~~~~~^~~~~~~~~~~~
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_tree.h: In member function 'void ndn::Face::onReceiveElement(const ndn::Block&)':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_tree.h:1125:14: note: parameter passing for argument of type 'std::_Rb_tree<unsigned int, std::pair<const unsigned int, ndn::PendingInterest>, std::_Select1st<std::pair<const unsigned int, ndn::PendingInterest> >, std::less<unsigned int>, std::allocator<std::pair<const unsigned int, ndn::PendingInterest> > >::const_iterator {aka std::_Rb_tree_const_iterator<std::pair<const unsigned int, ndn::PendingInterest> >}' changed in GCC 7.1
+  _M_erase_aux(__position);
+  ~~~~~~~~~~~~^~~~~~~~~~~~
+
+[ 90/202] Compiling ndn-cxx/util/notification-subscriber.cpp
+[ 91/202] Compiling ndn-cxx/security/v2/additional-description.cpp
+[ 92/202] Compiling ndn-cxx/security/transform/stream-sink.cpp
+[ 93/202] Compiling ndn-cxx/security/v2/validator-config/name-relation.cpp
+[ 94/202] Compiling ndn-cxx/security/transform/step-source.cpp
+[ 95/202] Compiling ndn-cxx/ims/in-memory-storage.cpp
+In file included from /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/vector:69:0,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/math_fwd.hpp:26,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/sign.hpp:17,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/inf_nan.hpp:34,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:63,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/try_lexical_convert.hpp:42,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast.hpp:32,
+                 from ../ndn-cxx/util/backports.hpp:88,
+                 from ../ndn-cxx/detail/common.hpp:121,
+                 from ./../ndn-cxx/impl/common-pch.hpp:28,
+                 from <command-line>:0:
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc: In member function 'void std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {const ndn::Delegation&}; _Tp = ndn::Delegation; _Alloc = std::allocator<ndn::Delegation>]':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc:394:7: note: parameter passing for argument of type 'std::vector<ndn::Delegation>::iterator {aka __gnu_cxx::__normal_iterator<ndn::Delegation*, std::vector<ndn::Delegation> >}' changed in GCC 7.1
+       vector<_Tp, _Alloc>::
+       ^~~~~~~~~~~~~~~~~~~
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc: In member function 'std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::const_iterator, const value_type&) [with _Tp = ndn::Delegation; _Alloc = std::allocator<ndn::Delegation>]':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc:114:5: note: parameter passing for argument of type 'std::vector<ndn::Delegation>::const_iterator {aka __gnu_cxx::__normal_iterator<const ndn::Delegation*, std::vector<ndn::Delegation> >}' changed in GCC 7.1
+     vector<_Tp, _Alloc>::
+     ^~~~~~~~~~~~~~~~~~~
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc:143:19: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<ndn::Delegation*, std::vector<ndn::Delegation> >' changed in GCC 7.1
+  _M_realloc_insert(begin() + (__position - cbegin()), __x);
+  ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc: In member function 'void std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {ndn::Delegation}; _Tp = ndn::Delegation; _Alloc = std::allocator<ndn::Delegation>]':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc:394:7: note: parameter passing for argument of type 'std::vector<ndn::Delegation>::iterator {aka __gnu_cxx::__normal_iterator<ndn::Delegation*, std::vector<ndn::Delegation> >}' changed in GCC 7.1
+       vector<_Tp, _Alloc>::
+       ^~~~~~~~~~~~~~~~~~~
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc: In member function 'void ndn::DelegationList::insertImpl(uint64_t, const ndn::Name&)':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc:105:21: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<ndn::Delegation*, std::vector<ndn::Delegation> >' changed in GCC 7.1
+    _M_realloc_insert(end(), std::forward<_Args>(__args)...);
+    ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../ndn-cxx/delegation-list.cpp:203:16: note: parameter passing for argument of type 'std::vector<ndn::Delegation>::const_iterator {aka __gnu_cxx::__normal_iterator<const ndn::Delegation*, std::vector<ndn::Delegation> >}' changed in GCC 7.1
+   m_dels.insert(pos, del);
+   ~~~~~~~~~~~~~^~~~~~~~~~
+../ndn-cxx/delegation-list.cpp: In constructor 'ndn::DelegationList::DelegationList(std::initializer_list<ndn::Delegation>)':
+../ndn-cxx/delegation-list.cpp:36:1: note: parameter passing for argument of type 'std::initializer_list<ndn::Delegation>' changed in GCC 7.1
+ DelegationList::DelegationList(std::initializer_list<Delegation> dels)
+ ^~~~~~~~~~~~~~
+
+[ 96/202] Compiling ndn-cxx/transport/tcp-transport.cpp
+[ 97/202] Compiling ndn-cxx/mgmt/dispatcher.cpp
+[ 98/202] Compiling ndn-cxx/security/v2/validator-config/rule.cpp
+[ 99/202] Compiling ndn-cxx/security/v2/validation-policy-config.cpp
+[100/202] Compiling ndn-cxx/security/transform/signer-filter.cpp
+[101/202] Compiling ndn-cxx/net/network-address.cpp
+[102/202] Compiling ndn-cxx/meta-info.cpp
+[103/202] Compiling ndn-cxx/security/transform/public-key.cpp
+[104/202] Compiling ndn-cxx/util/regex/regex-component-matcher.cpp
+[105/202] Compiling ndn-cxx/mgmt/nfd/face-event-notification.cpp
+[106/202] Compiling ndn-cxx/util/sha256.cpp
+[107/202] Compiling ndn-cxx/lp/cache-policy.cpp
+[108/202] Compiling ndn-cxx/security/v2/certificate-fetcher-from-network.cpp
+[109/202] Compiling ndn-cxx/security/transform/hmac-filter.cpp
+[110/202] Compiling ndn-cxx/security/transform/hex-encode.cpp
+[111/202] Compiling ndn-cxx/interest.cpp
+[112/202] Compiling ndn-cxx/security/transform/strip-space.cpp
+In file included from /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/vector:69:0,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/math_fwd.hpp:26,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/sign.hpp:17,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/inf_nan.hpp:34,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:63,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/try_lexical_convert.hpp:42,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast.hpp:32,
+                 from ../ndn-cxx/util/backports.hpp:88,
+                 from ../ndn-cxx/detail/common.hpp:121,
+                 from ./../ndn-cxx/impl/common-pch.hpp:28,
+                 from <command-line>:0:
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc: In member function 'void std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {const boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, boost::asio::wait_traits<std::chrono::_V2::steady_clock> > >::heap_entry&}; _Tp = boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, boost::asio::wait_traits<std::chrono::_V2::steady_clock> > >::heap_entry; _Alloc = std::allocator<boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, boost::asio::wait_traits<std::chrono::_V2::steady_clock> > >::heap_entry>]':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc:394:7: note: parameter passing for argument of type 'std::vector<boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, boost::asio::wait_traits<std::chrono::_V2::steady_clock> > >::heap_entry, std::allocator<boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, boost::asio::wait_traits<std::chrono::_V2::steady_clock> > >::heap_entry> >::iterator {aka __gnu_cxx::__normal_iterator<boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, boost::asio::wait_traits<std::chrono::_V2::steady_clock> > >::heap_entry*, std::vector<boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, boost::asio::wait_traits<std::chrono::_V2::steady_clock> > >::heap_entry, std::allocator<boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, boost::asio::wait_traits<std::chrono::_V2::steady_clock> > >::heap_entry> > >}' changed in GCC 7.1
+       vector<_Tp, _Alloc>::
+       ^~~~~~~~~~~~~~~~~~~
+In file included from /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/vector:64:0,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/math_fwd.hpp:26,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/sign.hpp:17,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/inf_nan.hpp:34,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:63,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/try_lexical_convert.hpp:42,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast.hpp:32,
+                 from ../ndn-cxx/util/backports.hpp:88,
+                 from ../ndn-cxx/detail/common.hpp:121,
+                 from ./../ndn-cxx/impl/common-pch.hpp:28,
+                 from <command-line>:0:
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_vector.h: In member function 'void boost::asio::detail::epoll_reactor::schedule_timer(boost::asio::detail::timer_queue<Time_Traits>&, const typename Time_Traits::time_type&, typename boost::asio::detail::timer_queue<Time_Traits>::per_timer_data&, boost::asio::detail::wait_op*) [with Time_Traits = boost::asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, boost::asio::wait_traits<std::chrono::_V2::steady_clock> >]':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_vector.h:948:21: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, boost::asio::wait_traits<std::chrono::_V2::steady_clock> > >::heap_entry*, std::vector<boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, boost::asio::wait_traits<std::chrono::_V2::steady_clock> > >::heap_entry, std::allocator<boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, boost::asio::wait_traits<std::chrono::_V2::steady_clock> > >::heap_entry> > >' changed in GCC 7.1
+    _M_realloc_insert(end(), __x);
+    ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+
+[113/202] Compiling ndn-cxx/util/config-file.cpp
+[114/202] Compiling ndn-cxx/util/regex/regex-backref-manager.cpp
+[115/202] Compiling ndn-cxx/util/string-helper.cpp
+[116/202] Compiling ndn-cxx/security/transform/block-cipher.cpp
+[117/202] Compiling ndn-cxx/util/logger.cpp
+[118/202] Compiling ndn-cxx/security/v2/certificate-fetcher.cpp
+[119/202] Compiling ndn-cxx/security/transform/hex-decode.cpp
+[120/202] Compiling ndn-cxx/mgmt/nfd/control-command.cpp
+[121/202] Compiling ndn-cxx/mgmt/nfd/control-parameters.cpp
+[122/202] Compiling ndn-cxx/security/transform/base64-encode.cpp
+[123/202] Compiling ndn-cxx/ims/in-memory-storage-lru.cpp
+[124/202] Compiling ndn-cxx/security/signature-sha256-with-rsa.cpp
+[125/202] Compiling ndn-cxx/util/time.cpp
+[126/202] Compiling ndn-cxx/security/transform/base64-decode.cpp
+[127/202] Compiling ndn-cxx/security/v2/certificate-fetcher-direct-fetch.cpp
+[128/202] Compiling ndn-cxx/mgmt/nfd/status-dataset.cpp
+[129/202] Compiling ndn-cxx/security/v2/trust-anchor-container.cpp
+[130/202] Compiling ndn-cxx/security/signature-sha256-with-ecdsa.cpp
+[131/202] Compiling ndn-cxx/security/validator-null.cpp
+[132/202] Compiling ndn-cxx/security/transform/digest-filter.cpp
+[133/202] Compiling ndn-cxx/security/tpm/tpm.cpp
+[134/202] Compiling ndn-cxx/lp/pit-token.cpp
+[135/202] Compiling ndn-cxx/security/transform/verifier-filter.cpp
+[136/202] Compiling ndn-cxx/security/tpm/key-handle.cpp
+[137/202] Compiling ndn-cxx/mgmt/nfd/controller.cpp
+[138/202] Compiling ndn-cxx/util/segment-fetcher.cpp
+In file included from /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/vector:69:0,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/math_fwd.hpp:26,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/sign.hpp:17,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/inf_nan.hpp:34,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:63,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/try_lexical_convert.hpp:42,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast.hpp:32,
+                 from ../ndn-cxx/util/backports.hpp:88,
+                 from ../ndn-cxx/detail/common.hpp:121,
+                 from ./../ndn-cxx/impl/common-pch.hpp:28,
+                 from <command-line>:0:
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc: In member function 'void std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {ndn::Block&}; _Tp = ndn::nfd::FaceStatus; _Alloc = std::allocator<ndn::nfd::FaceStatus>]':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc:394:7: note: parameter passing for argument of type 'std::vector<ndn::nfd::FaceStatus>::iterator {aka __gnu_cxx::__normal_iterator<ndn::nfd::FaceStatus*, std::vector<ndn::nfd::FaceStatus> >}' changed in GCC 7.1
+       vector<_Tp, _Alloc>::
+       ^~~~~~~~~~~~~~~~~~~
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc: In member function 'ndn::nfd::FaceDatasetBase::ResultType ndn::nfd::FaceDatasetBase::parseResult(ndn::ConstBufferPtr) const':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc:105:21: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<ndn::nfd::FaceStatus*, std::vector<ndn::nfd::FaceStatus> >' changed in GCC 7.1
+    _M_realloc_insert(end(), std::forward<_Args>(__args)...);
+    ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[139/202] Compiling ndn-cxx/security/v2/validation-policy-simple-hierarchy.cpp
+[140/202] Compiling ndn-cxx/security/tpm/key-handle-mem.cpp
+[141/202] Compiling ndn-cxx/security/tpm/back-end.cpp
+[142/202] Compiling ndn-cxx/security/transform/private-key.cpp
+[143/202] Compiling ndn-cxx/security/v2/validation-policy-command-interest.cpp
+[144/202] Compiling ndn-cxx/ims/in-memory-storage-persistent.cpp
+[145/202] Compiling ndn-cxx/security/pib/certificate-container.cpp
+[146/202] Compiling ndn-cxx/ims/in-memory-storage-lfu.cpp
+[147/202] Compiling ndn-cxx/util/regex/regex-matcher.cpp
+[148/202] Compiling ndn-cxx/security/pib/key.cpp
+[149/202] Compiling ndn-cxx/util/io.cpp
+[150/202] Compiling ndn-cxx/security/security-common.cpp
+In file included from /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/map:60:0,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/exception/info.hpp:14,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/exception/detail/exception_ptr.hpp:14,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/exception_ptr.hpp:9,
+                 from ../ndn-cxx/util/exception.hpp:29,
+                 from ../ndn-cxx/detail/common.hpp:122,
+                 from ./../ndn-cxx/impl/common-pch.hpp:28,
+                 from <command-line>:0:
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_tree.h: In member function 'void std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_erase_aux(std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::const_iterator) [with _Key = long long unsigned int; _Val = std::pair<const long long unsigned int, ndn::util::SegmentFetcher::PendingSegment>; _KeyOfValue = std::_Select1st<std::pair<const long long unsigned int, ndn::util::SegmentFetcher::PendingSegment> >; _Compare = std::less<long long unsigned int>; _Alloc = std::allocator<std::pair<const long long unsigned int, ndn::util::SegmentFetcher::PendingSegment> >]':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_tree.h:2470:5: note: parameter passing for argument of type 'std::_Rb_tree<long long unsigned int, std::pair<const long long unsigned int, ndn::util::SegmentFetcher::PendingSegment>, std::_Select1st<std::pair<const long long unsigned int, ndn::util::SegmentFetcher::PendingSegment> >, std::less<long long unsigned int>, std::allocator<std::pair<const long long unsigned int, ndn::util::SegmentFetcher::PendingSegment> > >::const_iterator {aka std::_Rb_tree_const_iterator<std::pair<const long long unsigned int, ndn::util::SegmentFetcher::PendingSegment> >}' changed in GCC 7.1
+     _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_tree.h: In member function 'void ndn::util::SegmentFetcher::cancelExcessInFlightSegments()':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_tree.h:1125:14: note: parameter passing for argument of type 'std::_Rb_tree<long long unsigned int, std::pair<const long long unsigned int, ndn::util::SegmentFetcher::PendingSegment>, std::_Select1st<std::pair<const long long unsigned int, ndn::util::SegmentFetcher::PendingSegment> >, std::less<long long unsigned int>, std::allocator<std::pair<const long long unsigned int, ndn::util::SegmentFetcher::PendingSegment> > >::const_iterator {aka std::_Rb_tree_const_iterator<std::pair<const long long unsigned int, ndn::util::SegmentFetcher::PendingSegment> >}' changed in GCC 7.1
+  _M_erase_aux(__position);
+  ~~~~~~~~~~~~^~~~~~~~~~~~
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_tree.h: In function 'std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_emplace_hint_unique(std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::const_iterator, _Args&& ...) [with _Args = {const std::piecewise_construct_t&, std::tuple<long long unsigned int&&>, std::tuple<>}; _Key = long long unsigned int; _Val = std::pair<const long long unsigned int, ndn::Buffer>; _KeyOfValue = std::_Select1st<std::pair<const long long unsigned int, ndn::Buffer> >; _Compare = std::less<long long unsigned int>; _Alloc = std::allocator<std::pair<const long long unsigned int, ndn::Buffer> >]':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_tree.h:2395:7: note: parameter passing for argument of type 'std::_Rb_tree<long long unsigned int, std::pair<const long long unsigned int, ndn::Buffer>, std::_Select1st<std::pair<const long long unsigned int, ndn::Buffer> >, std::less<long long unsigned int>, std::allocator<std::pair<const long long unsigned int, ndn::Buffer> > >::const_iterator {aka std::_Rb_tree_const_iterator<std::pair<const long long unsigned int, ndn::Buffer> >}' changed in GCC 7.1
+       _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/map:61:0,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/exception/info.hpp:14,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/exception/detail/exception_ptr.hpp:14,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/exception_ptr.hpp:9,
+                 from ../ndn-cxx/util/exception.hpp:29,
+                 from ../ndn-cxx/detail/common.hpp:122,
+                 from ./../ndn-cxx/impl/common-pch.hpp:28,
+                 from <command-line>:0:
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_map.h: In member function 'void ndn::util::SegmentFetcher::finalizeFetch()':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_map.h:512:4: note: parameter passing for argument of type 'std::_Rb_tree<long long unsigned int, std::pair<const long long unsigned int, ndn::Buffer>, std::_Select1st<std::pair<const long long unsigned int, ndn::Buffer> >, std::less<long long unsigned int>, std::allocator<std::pair<const long long unsigned int, ndn::Buffer> > >::const_iterator {aka std::_Rb_tree_const_iterator<std::pair<const long long unsigned int, ndn::Buffer> >}' changed in GCC 7.1
+    __i = _M_t._M_emplace_hint_unique(__i, std::piecewise_construct,
+    ^~~
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_map.h:512:4: note: parameter passing for argument of type 'std::_Rb_tree<long long unsigned int, std::pair<const long long unsigned int, ndn::Buffer>, std::_Select1st<std::pair<const long long unsigned int, ndn::Buffer> >, std::less<long long unsigned int>, std::allocator<std::pair<const long long unsigned int, ndn::Buffer> > >::const_iterator {aka std::_Rb_tree_const_iterator<std::pair<const long long unsigned int, ndn::Buffer> >}' changed in GCC 7.1
+    __i = _M_t._M_emplace_hint_unique(__i, std::piecewise_construct,
+    ^~~
+In file included from /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/map:60:0,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/exception/info.hpp:14,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/exception/detail/exception_ptr.hpp:14,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/exception_ptr.hpp:9,
+                 from ../ndn-cxx/util/exception.hpp:29,
+                 from ../ndn-cxx/detail/common.hpp:122,
+                 from ./../ndn-cxx/impl/common-pch.hpp:28,
+                 from <command-line>:0:
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_tree.h: In member function 'void ndn::util::SegmentFetcher::afterValidationSuccess(const ndn::Data&, const ndn::Interest&, std::map<long long unsigned int, ndn::util::SegmentFetcher::PendingSegment>::iterator, const std::weak_ptr<ndn::util::SegmentFetcher>&)':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_tree.h:1125:14: note: parameter passing for argument of type 'std::_Rb_tree<long long unsigned int, std::pair<const long long unsigned int, ndn::util::SegmentFetcher::PendingSegment>, std::_Select1st<std::pair<const long long unsigned int, ndn::util::SegmentFetcher::PendingSegment> >, std::less<long long unsigned int>, std::allocator<std::pair<const long long unsigned int, ndn::util::SegmentFetcher::PendingSegment> > >::const_iterator {aka std::_Rb_tree_const_iterator<std::pair<const long long unsigned int, ndn::util::SegmentFetcher::PendingSegment> >}' changed in GCC 7.1
+  _M_erase_aux(__position);
+  ~~~~~~~~~~~~^~~~~~~~~~~~
+
+[151/202] Compiling ndn-cxx/util/scheduler.cpp
+[152/202] Compiling ndn-cxx/ims/in-memory-storage-fifo.cpp
+[153/202] Compiling ndn-cxx/security/v2/validator-config/filter.cpp
+[154/202] Compiling ndn-cxx/security/safe-bag.cpp
+[155/202] Compiling ndn-cxx/security/pib/key-container.cpp
+[156/202] Compiling ndn-cxx/security/tpm/back-end-mem.cpp
+[157/202] Compiling ndn-cxx/security/verification-helpers.cpp
+[158/202] Compiling ndn-cxx/security/pib/pib.cpp
+[159/202] Compiling ndn-cxx/lp/nack-header.cpp
+In file included from /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/vector:69:0,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/math_fwd.hpp:26,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/sign.hpp:17,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/inf_nan.hpp:34,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:63,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/try_lexical_convert.hpp:42,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast.hpp:32,
+                 from ../ndn-cxx/util/backports.hpp:88,
+                 from ../ndn-cxx/detail/common.hpp:121,
+                 from ./../ndn-cxx/impl/common-pch.hpp:28,
+                 from <command-line>:0:
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc: In member function 'void std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {const boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<ndn::time::steady_clock, boost::asio::wait_traits<ndn::time::steady_clock> > >::heap_entry&}; _Tp = boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<ndn::time::steady_clock, boost::asio::wait_traits<ndn::time::steady_clock> > >::heap_entry; _Alloc = std::allocator<boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<ndn::time::steady_clock, boost::asio::wait_traits<ndn::time::steady_clock> > >::heap_entry>]':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc:394:7: note: parameter passing for argument of type 'std::vector<boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<ndn::time::steady_clock, boost::asio::wait_traits<ndn::time::steady_clock> > >::heap_entry, std::allocator<boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<ndn::time::steady_clock, boost::asio::wait_traits<ndn::time::steady_clock> > >::heap_entry> >::iterator {aka __gnu_cxx::__normal_iterator<boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<ndn::time::steady_clock, boost::asio::wait_traits<ndn::time::steady_clock> > >::heap_entry*, std::vector<boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<ndn::time::steady_clock, boost::asio::wait_traits<ndn::time::steady_clock> > >::heap_entry, std::allocator<boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<ndn::time::steady_clock, boost::asio::wait_traits<ndn::time::steady_clock> > >::heap_entry> > >}' changed in GCC 7.1
+       vector<_Tp, _Alloc>::
+       ^~~~~~~~~~~~~~~~~~~
+In file included from /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/vector:64:0,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/math_fwd.hpp:26,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/sign.hpp:17,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/inf_nan.hpp:34,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:63,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/try_lexical_convert.hpp:42,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast.hpp:32,
+                 from ../ndn-cxx/util/backports.hpp:88,
+                 from ../ndn-cxx/detail/common.hpp:121,
+                 from ./../ndn-cxx/impl/common-pch.hpp:28,
+                 from <command-line>:0:
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_vector.h: In member function 'void boost::asio::detail::epoll_reactor::schedule_timer(boost::asio::detail::timer_queue<Time_Traits>&, const typename Time_Traits::time_type&, typename boost::asio::detail::timer_queue<Time_Traits>::per_timer_data&, boost::asio::detail::wait_op*) [with Time_Traits = boost::asio::detail::chrono_time_traits<ndn::time::steady_clock, boost::asio::wait_traits<ndn::time::steady_clock> >]':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_vector.h:948:21: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<ndn::time::steady_clock, boost::asio::wait_traits<ndn::time::steady_clock> > >::heap_entry*, std::vector<boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<ndn::time::steady_clock, boost::asio::wait_traits<ndn::time::steady_clock> > >::heap_entry, std::allocator<boost::asio::detail::timer_queue<boost::asio::detail::chrono_time_traits<ndn::time::steady_clock, boost::asio::wait_traits<ndn::time::steady_clock> > >::heap_entry> > >' changed in GCC 7.1
+    _M_realloc_insert(end(), __x);
+    ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+
+[160/202] Compiling ndn-cxx/mgmt/nfd/command-options.cpp
+[161/202] Compiling ndn-cxx/util/dummy-client-face.cpp
+[162/202] Compiling ndn-cxx/net/network-monitor-stub.cpp
+[163/202] Compiling ndn-cxx/mgmt/status-dataset-context.cpp
+[164/202] Compiling ndn-cxx/mgmt/control-response.cpp
+[165/202] Compiling ndn-cxx/net/network-monitor.cpp
+[166/202] Compiling ndn-cxx/util/time-unit-test-clock.cpp
+[167/202] Compiling ndn-cxx/security/v2/validation-error.cpp
+[168/202] Compiling ndn-cxx/data.cpp
+[169/202] Compiling ndn-cxx/prefix-announcement.cpp
+[170/202] Compiling ndn-cxx/util/regex/regex-component-set-matcher.cpp
+[171/202] Compiling ndn-cxx/util/rtt-estimator.cpp
+[172/202] Compiling ndn-cxx/mgmt/nfd/forwarder-status.cpp
+[173/202] Compiling ndn-cxx/util/regex/regex-top-matcher.cpp
+[174/202] Compiling ndn-cxx/security/v2/certificate-fetcher-offline.cpp
+[175/202] Compiling ndn-cxx/mgmt/nfd/rib-entry.cpp
+[176/202] Compiling ndn-cxx/lp/prefix-announcement-header.cpp
+In file included from /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/vector:69:0,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/math_fwd.hpp:26,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/sign.hpp:17,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/inf_nan.hpp:34,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:63,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/try_lexical_convert.hpp:42,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast.hpp:32,
+                 from ../ndn-cxx/util/backports.hpp:88,
+                 from ../ndn-cxx/detail/common.hpp:121,
+                 from ./../ndn-cxx/impl/common-pch.hpp:28,
+                 from <command-line>:0:
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc: In member function 'void std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {const ndn::Interest&}; _Tp = ndn::Interest; _Alloc = std::allocator<ndn::Interest>]':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc:394:7: note: parameter passing for argument of type 'std::vector<ndn::Interest>::iterator {aka __gnu_cxx::__normal_iterator<ndn::Interest*, std::vector<ndn::Interest> >}' changed in GCC 7.1
+       vector<_Tp, _Alloc>::
+       ^~~~~~~~~~~~~~~~~~~
+In file included from /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/vector:64:0,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/math_fwd.hpp:26,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/sign.hpp:17,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/inf_nan.hpp:34,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:63,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/try_lexical_convert.hpp:42,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast.hpp:32,
+                 from ../ndn-cxx/util/backports.hpp:88,
+                 from ../ndn-cxx/detail/common.hpp:121,
+                 from ./../ndn-cxx/impl/common-pch.hpp:28,
+                 from <command-line>:0:
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_vector.h: In static member function 'static void std::_Function_handler<void(_ArgTypes ...), _Functor>::_M_invoke(const std::_Any_data&, _ArgTypes&& ...) [with _Functor = ndn::util::DummyClientFace::enablePacketLogging()::<lambda(const ndn::Interest&)>; _ArgTypes = {const ndn::Interest&}]':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_vector.h:948:21: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<ndn::Interest*, std::vector<ndn::Interest> >' changed in GCC 7.1
+    _M_realloc_insert(end(), __x);
+    ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/vector:69:0,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/math_fwd.hpp:26,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/sign.hpp:17,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/inf_nan.hpp:34,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:63,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/try_lexical_convert.hpp:42,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast.hpp:32,
+                 from ../ndn-cxx/util/backports.hpp:88,
+                 from ../ndn-cxx/detail/common.hpp:121,
+                 from ./../ndn-cxx/impl/common-pch.hpp:28,
+                 from <command-line>:0:
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc: In member function 'void std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {const ndn::Data&}; _Tp = ndn::Data; _Alloc = std::allocator<ndn::Data>]':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc:394:7: note: parameter passing for argument of type 'std::vector<ndn::Data>::iterator {aka __gnu_cxx::__normal_iterator<ndn::Data*, std::vector<ndn::Data> >}' changed in GCC 7.1
+       vector<_Tp, _Alloc>::
+       ^~~~~~~~~~~~~~~~~~~
+In file included from /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/vector:64:0,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/math_fwd.hpp:26,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/sign.hpp:17,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/inf_nan.hpp:34,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:63,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/try_lexical_convert.hpp:42,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast.hpp:32,
+                 from ../ndn-cxx/util/backports.hpp:88,
+                 from ../ndn-cxx/detail/common.hpp:121,
+                 from ./../ndn-cxx/impl/common-pch.hpp:28,
+                 from <command-line>:0:
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_vector.h: In static member function 'static void std::_Function_handler<void(_ArgTypes ...), _Functor>::_M_invoke(const std::_Any_data&, _ArgTypes&& ...) [with _Functor = ndn::util::DummyClientFace::enablePacketLogging()::<lambda(const ndn::Data&)>; _ArgTypes = {const ndn::Data&}]':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_vector.h:948:21: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<ndn::Data*, std::vector<ndn::Data> >' changed in GCC 7.1
+    _M_realloc_insert(end(), __x);
+    ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/vector:69:0,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/math_fwd.hpp:26,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/sign.hpp:17,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/inf_nan.hpp:34,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:63,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/try_lexical_convert.hpp:42,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast.hpp:32,
+                 from ../ndn-cxx/util/backports.hpp:88,
+                 from ../ndn-cxx/detail/common.hpp:121,
+                 from ./../ndn-cxx/impl/common-pch.hpp:28,
+                 from <command-line>:0:
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc: In member function 'void std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {const ndn::lp::Nack&}; _Tp = ndn::lp::Nack; _Alloc = std::allocator<ndn::lp::Nack>]':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc:394:7: note: parameter passing for argument of type 'std::vector<ndn::lp::Nack>::iterator {aka __gnu_cxx::__normal_iterator<ndn::lp::Nack*, std::vector<ndn::lp::Nack> >}' changed in GCC 7.1
+       vector<_Tp, _Alloc>::
+       ^~~~~~~~~~~~~~~~~~~
+In file included from /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/vector:64:0,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/math_fwd.hpp:26,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/sign.hpp:17,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/inf_nan.hpp:34,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:63,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/try_lexical_convert.hpp:42,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast.hpp:32,
+                 from ../ndn-cxx/util/backports.hpp:88,
+                 from ../ndn-cxx/detail/common.hpp:121,
+                 from ./../ndn-cxx/impl/common-pch.hpp:28,
+                 from <command-line>:0:
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_vector.h: In static member function 'static void std::_Function_handler<void(_ArgTypes ...), _Functor>::_M_invoke(const std::_Any_data&, _ArgTypes&& ...) [with _Functor = ndn::util::DummyClientFace::enablePacketLogging()::<lambda(const ndn::lp::Nack&)>; _ArgTypes = {const ndn::lp::Nack&}]':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_vector.h:948:21: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<ndn::lp::Nack*, std::vector<ndn::lp::Nack> >' changed in GCC 7.1
+    _M_realloc_insert(end(), __x);
+    ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+
+[177/202] Compiling ndn-cxx/mgmt/nfd/strategy-choice.cpp
+[178/202] Compiling ndn-cxx/signature.cpp
+[179/202] Compiling ndn-cxx/util/random.cpp
+[180/202] Compiling ndn-cxx/security/digest-sha256.cpp
+[181/202] Compiling ndn-cxx/security/v2/validation-policy.cpp
+[182/202] Compiling ndn-cxx/security/pib/identity-container.cpp
+In file included from /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/vector:69:0,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/math_fwd.hpp:26,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/sign.hpp:17,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/inf_nan.hpp:34,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:63,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/try_lexical_convert.hpp:42,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast.hpp:32,
+                 from ../ndn-cxx/util/backports.hpp:88,
+                 from ../ndn-cxx/detail/common.hpp:121,
+                 from ./../ndn-cxx/impl/common-pch.hpp:28,
+                 from <command-line>:0:
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc: In member function 'void std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {const ndn::nfd::Route&}; _Tp = ndn::nfd::Route; _Alloc = std::allocator<ndn::nfd::Route>]':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc:394:7: note: parameter passing for argument of type 'std::vector<ndn::nfd::Route>::iterator {aka __gnu_cxx::__normal_iterator<ndn::nfd::Route*, std::vector<ndn::nfd::Route> >}' changed in GCC 7.1
+       vector<_Tp, _Alloc>::
+       ^~~~~~~~~~~~~~~~~~~
+In file included from /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/vector:64:0,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/math_fwd.hpp:26,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/sign.hpp:17,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/inf_nan.hpp:34,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:63,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/try_lexical_convert.hpp:42,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast.hpp:32,
+                 from ../ndn-cxx/util/backports.hpp:88,
+                 from ../ndn-cxx/detail/common.hpp:121,
+                 from ./../ndn-cxx/impl/common-pch.hpp:28,
+                 from <command-line>:0:
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_vector.h: In member function 'ndn::nfd::RibEntry& ndn::nfd::RibEntry::addRoute(const ndn::nfd::Route&)':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/stl_vector.h:948:21: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<ndn::nfd::Route*, std::vector<ndn::nfd::Route> >' changed in GCC 7.1
+    _M_realloc_insert(end(), __x);
+    ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/vector:69:0,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/math_fwd.hpp:26,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/math/special_functions/sign.hpp:17,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/inf_nan.hpp:34,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:63,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast/try_lexical_convert.hpp:42,
+                 from /home/ath/raspberrypi/rootfs/usr/include/boost/lexical_cast.hpp:32,
+                 from ../ndn-cxx/util/backports.hpp:88,
+                 from ../ndn-cxx/detail/common.hpp:121,
+                 from ./../ndn-cxx/impl/common-pch.hpp:28,
+                 from <command-line>:0:
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc: In member function 'void std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {const ndn::Block&}; _Tp = ndn::nfd::Route; _Alloc = std::allocator<ndn::nfd::Route>]':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc:394:7: note: parameter passing for argument of type 'std::vector<ndn::nfd::Route>::iterator {aka __gnu_cxx::__normal_iterator<ndn::nfd::Route*, std::vector<ndn::nfd::Route> >}' changed in GCC 7.1
+       vector<_Tp, _Alloc>::
+       ^~~~~~~~~~~~~~~~~~~
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc: In member function 'void ndn::nfd::RibEntry::wireDecode(const ndn::Block&)':
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/include/c++/7.4.1/bits/vector.tcc:105:21: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<ndn::nfd::Route*, std::vector<ndn::nfd::Route> >' changed in GCC 7.1
+    _M_realloc_insert(end(), std::forward<_Args>(__args)...);
+    ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[183/202] Compiling ndn-cxx/security/command-interest-signer.cpp
+[184/202] Compiling ndn-cxx/security/v2/certificate.cpp
+[185/202] Compiling tools/ndnsec/cert-dump.cpp
+[186/202] Compiling tools/ndnsec/sign-req.cpp
+[187/202] Compiling tools/ndnsec/delete.cpp
+[188/202] Compiling tools/ndnsec/unlock-tpm.cpp
+[189/202] Compiling tools/ndnsec/set-default.cpp
+[190/202] Compiling tools/ndnsec/export.cpp
+[191/202] Compiling tools/ndnsec/cert-gen.cpp
+[192/202] Compiling tools/ndnsec/list.cpp
+[193/202] Compiling tools/ndnsec/import.cpp
+[194/202] Linking build/libndn-cxx.so
+[195/202] Compiling tools/ndnsec/key-gen.cpp
+[196/202] Compiling tools/ndnsec/cert-install.cpp
+[197/202] Compiling tools/ndnsec/get-default.cpp
+[198/202] Compiling tools/ndnsec/util.cpp
+[199/202] Compiling ndn-cxx/version.hpp.in
+[200/202] Compiling tools/ndnsec/main.cpp
+Using built-in specs.
+COLLECT_GCC=arm-rpi-linux-gnueabihf-c++
+COLLECT_LTO_WRAPPER=/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/libexec/gcc/arm-rpi-linux-gnueabihf/7.4.1/lto-wrapper
+Target: arm-rpi-linux-gnueabihf
+Configured with: /home/ath/raspberrypi/.build/arm-rpi-linux-gnueabihf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=arm-rpi-linux-gnueabihf --prefix=/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf --with-sysroot=/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/sysroot --enable-languages=c,c++ --with-cpu=arm1176jzf-s --with-fpu=vfp --with-float=hard --with-pkgversion='crosstool-NG 1.24.0' --enable-__cxa_atexit --disable-libmudflap --disable-libgomp --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libsanitizer --disable-libmpx --with-gmp=/home/ath/raspberrypi/.build/arm-rpi-linux-gnueabihf/buildtools --with-mpfr=/home/ath/raspberrypi/.build/arm-rpi-linux-gnueabihf/buildtools --with-mpc=/home/ath/raspberrypi/.build/arm-rpi-linux-gnueabihf/buildtools --with-isl=/home/ath/raspberrypi/.build/arm-rpi-linux-gnueabihf/buildtools --enable-lto --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --enable-threads=posix --enable-target-optspace --disable-plugin --disable-nls --disable-multilib --with-local-prefix=/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/sysroot --enable-long-long --with-float=hard
+Thread model: posix
+gcc version 7.4.1 20181213 (crosstool-NG 1.24.0) 
+COMPILER_PATH=/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/libexec/gcc/arm-rpi-linux-gnueabihf/7.4.1/:/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/libexec/gcc/arm-rpi-linux-gnueabihf/7.4.1/:/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/libexec/gcc/arm-rpi-linux-gnueabihf/:/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/lib/gcc/arm-rpi-linux-gnueabihf/7.4.1/:/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/lib/gcc/arm-rpi-linux-gnueabihf/:/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/lib/gcc/arm-rpi-linux-gnueabihf/7.4.1/../../../../arm-rpi-linux-gnueabihf/bin/
+LIBRARY_PATH=/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/lib/gcc/arm-rpi-linux-gnueabihf/7.4.1/:/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/lib/gcc/arm-rpi-linux-gnueabihf/7.4.1/../../../../arm-rpi-linux-gnueabihf/lib/:/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/sysroot/lib/:/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/sysroot/usr/lib/
+COLLECT_GCC_OPTIONS='-shared' '-o' '/home/ath/raspberrypi/ndn-cxx/build/libndn-cxx.so' '-L.' '-L/home/ath/raspberrypi/rootfs/usr/lib/arm-linux-gnueabihf' '-L/home/ath/raspberrypi/rootfs/usr/lib/arm-linux-gnueabihf' '-L/usr/lib/arm-linux-gnueabihf' '-v' '-shared-libgcc' '-mcpu=arm1176jzf-s' '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu'
+ /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/libexec/gcc/arm-rpi-linux-gnueabihf/7.4.1/collect2 -plugin /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/libexec/gcc/arm-rpi-linux-gnueabihf/7.4.1/liblto_plugin.so -plugin-opt=/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/libexec/gcc/arm-rpi-linux-gnueabihf/7.4.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccfwHQB5.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/sysroot --eh-frame-hdr -shared -X -m armelf_linux_eabi -o /home/ath/raspberrypi/ndn-cxx/build/libndn-cxx.so /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/lib/gcc/arm-rpi-linux-gnueabihf/7.4.1/../../../../arm-rpi-linux-gnueabihf/lib/crti.o /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/lib/gcc/arm-rpi-linux-gnueabihf/7.4.1/crtbeginS.o -L. -L/home/ath/raspberrypi/rootfs/usr/lib/arm-linux-gnueabihf -L/home/ath/raspberrypi/rootfs/usr/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf -L/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/lib/gcc/arm-rpi-linux-gnueabihf/7.4.1 -L/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/lib/gcc/arm-rpi-linux-gnueabihf/7.4.1/../../../../arm-rpi-linux-gnueabihf/lib -L/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/sysroot/lib -L/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/sysroot/usr/lib -h libndn-cxx.so.0.6.6 ndn-cxx/data.cpp.2.o ndn-cxx/delegation-list.cpp.2.o ndn-cxx/detail/cancel-handle.cpp.2.o ndn-cxx/detail/packet-base.cpp.2.o ndn-cxx/encoding/block-helpers.cpp.2.o ndn-cxx/encoding/block.cpp.2.o ndn-cxx/encoding/buffer-stream.cpp.2.o ndn-cxx/encoding/encoder.cpp.2.o ndn-cxx/encoding/estimator.cpp.2.o ndn-cxx/encoding/nfd-constants.cpp.2.o ndn-cxx/encoding/tlv.cpp.2.o ndn-cxx/face.cpp.2.o ndn-cxx/ims/in-memory-storage-entry.cpp.2.o ndn-cxx/ims/in-memory-storage-fifo.cpp.2.o ndn-cxx/ims/in-memory-storage-lfu.cpp.2.o ndn-cxx/ims/in-memory-storage-lru.cpp.2.o ndn-cxx/ims/in-memory-storage-persistent.cpp.2.o ndn-cxx/ims/in-memory-storage.cpp.2.o ndn-cxx/interest-filter.cpp.2.o ndn-cxx/interest.cpp.2.o ndn-cxx/key-locator.cpp.2.o ndn-cxx/link.cpp.2.o ndn-cxx/lp/cache-policy.cpp.2.o ndn-cxx/lp/nack-header.cpp.2.o ndn-cxx/lp/nack.cpp.2.o ndn-cxx/lp/packet.cpp.2.o ndn-cxx/lp/pit-token.cpp.2.o ndn-cxx/lp/prefix-announcement-header.cpp.2.o ndn-cxx/meta-info.cpp.2.o ndn-cxx/metadata-object.cpp.2.o ndn-cxx/mgmt/control-response.cpp.2.o ndn-cxx/mgmt/dispatcher.cpp.2.o ndn-cxx/mgmt/nfd/channel-status.cpp.2.o ndn-cxx/mgmt/nfd/command-options.cpp.2.o ndn-cxx/mgmt/nfd/control-command.cpp.2.o ndn-cxx/mgmt/nfd/control-parameters.cpp.2.o ndn-cxx/mgmt/nfd/controller.cpp.2.o ndn-cxx/mgmt/nfd/cs-info.cpp.2.o ndn-cxx/mgmt/nfd/face-event-notification.cpp.2.o ndn-cxx/mgmt/nfd/face-monitor.cpp.2.o ndn-cxx/mgmt/nfd/face-query-filter.cpp.2.o ndn-cxx/mgmt/nfd/face-status.cpp.2.o ndn-cxx/mgmt/nfd/fib-entry.cpp.2.o ndn-cxx/mgmt/nfd/forwarder-status.cpp.2.o ndn-cxx/mgmt/nfd/rib-entry.cpp.2.o ndn-cxx/mgmt/nfd/status-dataset.cpp.2.o ndn-cxx/mgmt/nfd/strategy-choice.cpp.2.o ndn-cxx/mgmt/status-dataset-context.cpp.2.o ndn-cxx/name-component.cpp.2.o ndn-cxx/name.cpp.2.o ndn-cxx/net/dns.cpp.2.o ndn-cxx/net/ethernet.cpp.2.o ndn-cxx/net/face-uri.cpp.2.o ndn-cxx/net/impl/link-type-helper.cpp.2.o ndn-cxx/net/impl/linux-if-constants.cpp.2.o ndn-cxx/net/network-address.cpp.2.o ndn-cxx/net/network-interface.cpp.2.o ndn-cxx/net/network-monitor-stub.cpp.2.o ndn-cxx/net/network-monitor.cpp.2.o ndn-cxx/prefix-announcement.cpp.2.o ndn-cxx/security/command-interest-signer.cpp.2.o ndn-cxx/security/digest-sha256.cpp.2.o ndn-cxx/security/impl/openssl-helper.cpp.2.o ndn-cxx/security/key-params.cpp.2.o ndn-cxx/security/pib/certificate-container.cpp.2.o ndn-cxx/security/pib/identity-container.cpp.2.o ndn-cxx/security/pib/identity.cpp.2.o ndn-cxx/security/pib/impl/identity-impl.cpp.2.o ndn-cxx/security/pib/impl/key-impl.cpp.2.o ndn-cxx/security/pib/key-container.cpp.2.o ndn-cxx/security/pib/key.cpp.2.o ndn-cxx/security/pib/pib-memory.cpp.2.o ndn-cxx/security/pib/pib.cpp.2.o ndn-cxx/security/safe-bag.cpp.2.o ndn-cxx/security/security-common.cpp.2.o ndn-cxx/security/signature-sha256-with-ecdsa.cpp.2.o ndn-cxx/security/signature-sha256-with-rsa.cpp.2.o ndn-cxx/security/signing-helpers.cpp.2.o ndn-cxx/security/signing-info.cpp.2.o ndn-cxx/security/tpm/back-end-file.cpp.2.o ndn-cxx/security/tpm/back-end-mem.cpp.2.o ndn-cxx/security/tpm/back-end.cpp.2.o ndn-cxx/security/tpm/key-handle-mem.cpp.2.o ndn-cxx/security/tpm/key-handle.cpp.2.o ndn-cxx/security/tpm/tpm.cpp.2.o ndn-cxx/security/transform/base64-decode.cpp.2.o ndn-cxx/security/transform/base64-encode.cpp.2.o ndn-cxx/security/transform/block-cipher.cpp.2.o ndn-cxx/security/transform/bool-sink.cpp.2.o ndn-cxx/security/transform/buffer-source.cpp.2.o ndn-cxx/security/transform/digest-filter.cpp.2.o ndn-cxx/security/transform/hex-decode.cpp.2.o ndn-cxx/security/transform/hex-encode.cpp.2.o ndn-cxx/security/transform/hmac-filter.cpp.2.o ndn-cxx/security/transform/private-key.cpp.2.o ndn-cxx/security/transform/public-key.cpp.2.o ndn-cxx/security/transform/signer-filter.cpp.2.o ndn-cxx/security/transform/step-source.cpp.2.o ndn-cxx/security/transform/stream-sink.cpp.2.o ndn-cxx/security/transform/stream-source.cpp.2.o ndn-cxx/security/transform/strip-space.cpp.2.o ndn-cxx/security/transform/transform-base.cpp.2.o ndn-cxx/security/transform/verifier-filter.cpp.2.o ndn-cxx/security/v2/additional-description.cpp.2.o ndn-cxx/security/v2/certificate-bundle-fetcher.cpp.2.o ndn-cxx/security/v2/certificate-cache.cpp.2.o ndn-cxx/security/v2/certificate-fetcher-direct-fetch.cpp.2.o ndn-cxx/security/v2/certificate-fetcher-from-network.cpp.2.o ndn-cxx/security/v2/certificate-fetcher-offline.cpp.2.o ndn-cxx/security/v2/certificate-fetcher.cpp.2.o ndn-cxx/security/v2/certificate-storage.cpp.2.o ndn-cxx/security/v2/certificate.cpp.2.o ndn-cxx/security/v2/key-chain.cpp.2.o ndn-cxx/security/v2/trust-anchor-container.cpp.2.o ndn-cxx/security/v2/trust-anchor-group.cpp.2.o ndn-cxx/security/v2/validation-error.cpp.2.o ndn-cxx/security/v2/validation-policy-command-interest.cpp.2.o ndn-cxx/security/v2/validation-policy-config.cpp.2.o ndn-cxx/security/v2/validation-policy-simple-hierarchy.cpp.2.o ndn-cxx/security/v2/validation-policy.cpp.2.o ndn-cxx/security/v2/validation-state.cpp.2.o ndn-cxx/security/v2/validator-config/checker.cpp.2.o ndn-cxx/security/v2/validator-config/filter.cpp.2.o ndn-cxx/security/v2/validator-config/name-relation.cpp.2.o ndn-cxx/security/v2/validator-config/rule.cpp.2.o ndn-cxx/security/v2/validator.cpp.2.o ndn-cxx/security/validator-config.cpp.2.o ndn-cxx/security/validator-null.cpp.2.o ndn-cxx/security/validity-period.cpp.2.o ndn-cxx/security/verification-helpers.cpp.2.o ndn-cxx/signature-info.cpp.2.o ndn-cxx/signature.cpp.2.o ndn-cxx/transport/tcp-transport.cpp.2.o ndn-cxx/transport/transport.cpp.2.o ndn-cxx/transport/unix-transport.cpp.2.o ndn-cxx/util/config-file.cpp.2.o ndn-cxx/util/dummy-client-face.cpp.2.o ndn-cxx/util/exception.cpp.2.o ndn-cxx/util/indented-stream.cpp.2.o ndn-cxx/util/io.cpp.2.o ndn-cxx/util/logger.cpp.2.o ndn-cxx/util/logging.cpp.2.o ndn-cxx/util/notification-subscriber.cpp.2.o ndn-cxx/util/random.cpp.2.o ndn-cxx/util/regex/regex-backref-manager.cpp.2.o ndn-cxx/util/regex/regex-backref-matcher.cpp.2.o ndn-cxx/util/regex/regex-component-matcher.cpp.2.o ndn-cxx/util/regex/regex-component-set-matcher.cpp.2.o ndn-cxx/util/regex/regex-matcher.cpp.2.o ndn-cxx/util/regex/regex-pattern-list-matcher.cpp.2.o ndn-cxx/util/regex/regex-pseudo-matcher.cpp.2.o ndn-cxx/util/regex/regex-repeat-matcher.cpp.2.o ndn-cxx/util/regex/regex-top-matcher.cpp.2.o ndn-cxx/util/rtt-estimator.cpp.2.o ndn-cxx/util/scheduler.cpp.2.o ndn-cxx/util/segment-fetcher.cpp.2.o ndn-cxx/util/sha256.cpp.2.o ndn-cxx/util/signal/connection.cpp.2.o ndn-cxx/util/signal/scoped-connection.cpp.2.o ndn-cxx/util/sqlite3-statement.cpp.2.o ndn-cxx/util/string-helper.cpp.2.o ndn-cxx/util/time-unit-test-clock.cpp.2.o ndn-cxx/util/time.cpp.2.o ndn-cxx/security/pib/pib-sqlite3.cpp.2.o -Bstatic -Bdynamic -lboost_system -lboost_program_options -lboost_chrono -lboost_date_time -lboost_filesystem -lboost_thread -lboost_log -lboost_stacktrace_backtrace -lsqlite3 -rpath-link=/home/ath/raspberrypi/rootfs/usr/lib/arm-linux-gnueabihf -lstdc++ -lm -lgcc_s -lc -lgcc_s /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/lib/gcc/arm-rpi-linux-gnueabihf/7.4.1/crtendS.o /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/lib/gcc/arm-rpi-linux-gnueabihf/7.4.1/../../../../arm-rpi-linux-gnueabihf/lib/crtn.o
+COLLECT_GCC_OPTIONS='-shared' '-o' '/home/ath/raspberrypi/ndn-cxx/build/libndn-cxx.so' '-L.' '-L/home/ath/raspberrypi/rootfs/usr/lib/arm-linux-gnueabihf' '-L/home/ath/raspberrypi/rootfs/usr/lib/arm-linux-gnueabihf' '-L/usr/lib/arm-linux-gnueabihf' '-v' '-shared-libgcc' '-mcpu=arm1176jzf-s' '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu'
+
+[201/202] Linking build/bin/ndnsec
+Using built-in specs.
+COLLECT_GCC=arm-rpi-linux-gnueabihf-c++
+COLLECT_LTO_WRAPPER=/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/libexec/gcc/arm-rpi-linux-gnueabihf/7.4.1/lto-wrapper
+Target: arm-rpi-linux-gnueabihf
+Configured with: /home/ath/raspberrypi/.build/arm-rpi-linux-gnueabihf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=arm-rpi-linux-gnueabihf --prefix=/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf --with-sysroot=/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/sysroot --enable-languages=c,c++ --with-cpu=arm1176jzf-s --with-fpu=vfp --with-float=hard --with-pkgversion='crosstool-NG 1.24.0' --enable-__cxa_atexit --disable-libmudflap --disable-libgomp --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libsanitizer --disable-libmpx --with-gmp=/home/ath/raspberrypi/.build/arm-rpi-linux-gnueabihf/buildtools --with-mpfr=/home/ath/raspberrypi/.build/arm-rpi-linux-gnueabihf/buildtools --with-mpc=/home/ath/raspberrypi/.build/arm-rpi-linux-gnueabihf/buildtools --with-isl=/home/ath/raspberrypi/.build/arm-rpi-linux-gnueabihf/buildtools --enable-lto --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --enable-threads=posix --enable-target-optspace --disable-plugin --disable-nls --disable-multilib --with-local-prefix=/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/sysroot --enable-long-long --with-float=hard
+Thread model: posix
+gcc version 7.4.1 20181213 (crosstool-NG 1.24.0) 
+COMPILER_PATH=/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/libexec/gcc/arm-rpi-linux-gnueabihf/7.4.1/:/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/libexec/gcc/arm-rpi-linux-gnueabihf/7.4.1/:/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/libexec/gcc/arm-rpi-linux-gnueabihf/:/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/lib/gcc/arm-rpi-linux-gnueabihf/7.4.1/:/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/lib/gcc/arm-rpi-linux-gnueabihf/:/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/lib/gcc/arm-rpi-linux-gnueabihf/7.4.1/../../../../arm-rpi-linux-gnueabihf/bin/
+LIBRARY_PATH=/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/lib/gcc/arm-rpi-linux-gnueabihf/7.4.1/:/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/lib/gcc/arm-rpi-linux-gnueabihf/7.4.1/../../../../arm-rpi-linux-gnueabihf/lib/:/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/sysroot/lib/:/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/sysroot/usr/lib/
+COLLECT_GCC_OPTIONS='-o' '/home/ath/raspberrypi/ndn-cxx/build/bin/ndnsec' '-L.' '-L/home/ath/raspberrypi/rootfs/usr/lib/arm-linux-gnueabihf' '-L.' '-L/home/ath/raspberrypi/rootfs/usr/lib/arm-linux-gnueabihf' '-L/usr/lib/arm-linux-gnueabihf' '-v' '-shared-libgcc' '-mcpu=arm1176jzf-s' '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu'
+ /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/libexec/gcc/arm-rpi-linux-gnueabihf/7.4.1/collect2 -plugin /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/libexec/gcc/arm-rpi-linux-gnueabihf/7.4.1/liblto_plugin.so -plugin-opt=/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/libexec/gcc/arm-rpi-linux-gnueabihf/7.4.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgeocwB.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/sysroot --eh-frame-hdr -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o /home/ath/raspberrypi/ndn-cxx/build/bin/ndnsec /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/lib/gcc/arm-rpi-linux-gnueabihf/7.4.1/../../../../arm-rpi-linux-gnueabihf/lib/crt1.o /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/lib/gcc/arm-rpi-linux-gnueabihf/7.4.1/../../../../arm-rpi-linux-gnueabihf/lib/crti.o /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/lib/gcc/arm-rpi-linux-gnueabihf/7.4.1/crtbegin.o -L. -L/home/ath/raspberrypi/rootfs/usr/lib/arm-linux-gnueabihf -L. -L/home/ath/raspberrypi/rootfs/usr/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf -L/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/lib/gcc/arm-rpi-linux-gnueabihf/7.4.1 -L/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/lib/gcc/arm-rpi-linux-gnueabihf/7.4.1/../../../../arm-rpi-linux-gnueabihf/lib -L/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/sysroot/lib -L/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/sysroot/usr/lib tools/ndnsec/main.cpp.2.o tools/ndnsec/cert-dump.cpp.1.o tools/ndnsec/cert-gen.cpp.1.o tools/ndnsec/cert-install.cpp.1.o tools/ndnsec/delete.cpp.1.o tools/ndnsec/export.cpp.1.o tools/ndnsec/get-default.cpp.1.o tools/ndnsec/import.cpp.1.o tools/ndnsec/key-gen.cpp.1.o tools/ndnsec/list.cpp.1.o tools/ndnsec/set-default.cpp.1.o tools/ndnsec/sign-req.cpp.1.o tools/ndnsec/unlock-tpm.cpp.1.o tools/ndnsec/util.cpp.1.o -Bstatic -Bdynamic -lndn-cxx -lboost_system -lboost_program_options -lboost_chrono -lboost_date_time -lboost_filesystem -lboost_thread -lboost_log -lboost_stacktrace_backtrace -lsqlite3 -rpath-link=/home/ath/raspberrypi/rootfs/usr/lib/arm-linux-gnueabihf -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/lib/gcc/arm-rpi-linux-gnueabihf/7.4.1/crtend.o /home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/lib/gcc/arm-rpi-linux-gnueabihf/7.4.1/../../../../arm-rpi-linux-gnueabihf/lib/crtn.o
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/lib/gcc/arm-rpi-linux-gnueabihf/7.4.1/../../../../arm-rpi-linux-gnueabihf/bin/ld: tools/ndnsec/cert-dump.cpp.1.o: undefined reference to symbol 'pthread_getspecific@@GLIBC_2.4'
+/home/ath/raspberrypi/x-tools/arm-rpi-linux-gnueabihf/arm-rpi-linux-gnueabihf/sysroot/lib/libpthread.so.0: error adding symbols: DSO missing from command line
+collect2: error: ld returned 1 exit status
+
+Waf: Leaving directory `/home/ath/raspberrypi/ndn-cxx/build'
